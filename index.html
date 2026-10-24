@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DE DIGITALS × DESTOO — AI Video Prompts & Niches</title>
+<meta name="description" content="Ready-to-use AI video prompts, niche advice and content ideas for beginners." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0C1013; --ink2:#12181C; --card:#161D22;
+    --ivory:#F4F0E6; --muted:#9BA49F;
+    --bronze:#C6A15B; --copper:#D9B27C;
+    --line:rgba(244,240,230,0.10);
+    --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink); color:var(--ivory);
+    font-family:'Inter',system-ui,sans-serif;
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:400;line-height:1.1;letter-spacing:-0.02em}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);font-weight:500}
+
+  /* ---------- background texture ---------- */
+  .glow{
+    position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:
+      radial-gradient(700px 400px at 15% -5%, rgba(198,161,91,.13), transparent 60%),
+      radial-gradient(600px 500px at 90% 10%, rgba(217,178,124,.07), transparent 60%);
+  }
+  .grid-bg{
+    position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),
+                     linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(circle at 50% 0%,black,transparent 75%);
+  }
+  main,header,footer{position:relative;z-index:1}
+
+  /* ---------- nav ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(12,16,19,.75);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--line);
+    transition:background .3s ease, border-color .3s ease, box-shadow .3s ease;
+  }
+  header.scrolled{
+    background:rgba(12,16,19,.94);
+    border-bottom-color:rgba(198,161,91,.2);
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:17px;letter-spacing:.02em;transition:opacity .2s}
+  .logo:hover{opacity:.9}
+  .logo .mark{
+    width:32px;height:32px;border-radius:8px;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--bronze),var(--copper));
+    color:#0C1013;font-weight:700;font-size:13px;font-family:'Inter',sans-serif;
+    box-shadow:0 4px 12px rgba(198,161,91,.2);
+  }
+  .logo .x{color:var(--bronze);opacity:.7;font-size:13px}
+  .navlinks{display:flex;align-items:center;gap:32px;font-size:14px}
+  .nav-link{
+    position:relative;
+    color:var(--muted);
+    font-weight:500;
+    padding:8px 0;
+    transition:color .25s ease;
+    letter-spacing:.01em;
+  }
+  .nav-link:hover{color:var(--ivory)}
+  .nav-link.active{color:var(--ivory)}
+  .nav-link::after{
+    content:'';
+    position:absolute;
+    bottom:0;left:0;
+    width:0%;
+    height:2px;
+    background:linear-gradient(90deg,var(--bronze),var(--copper));
+    border-radius:2px;
+    transition:width .25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after{
+    width:100%;
+  }
+  .nav-actions{display:flex;align-items:center;gap:14px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:999px;font-size:14px;font-weight:500;
+    border:1px solid transparent;cursor:pointer;transition:.25s;
+    font-family:'Inter',sans-serif;
+  }
+  .btn-primary{background:linear-gradient(135deg,var(--bronze),var(--copper));color:#0C1013}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(198,161,91,.25)}
+  .btn-ghost{border-color:var(--line);color:var(--ivory);background:transparent}
+  .btn-ghost:hover{border-color:var(--bronze);color:var(--copper)}
+
+  /* modern animated burger */
+  .burger{
+    display:none;
+    background:transparent;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:8px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    transition:border-color .25s ease, background .25s ease;
+  }
+  .burger:hover{border-color:var(--bronze);background:rgba(198,161,91,.08)}
+  .burger .bar{
+    display:block;
+    width:20px;
+    height:2px;
+    background:var(--ivory);
+    border-radius:2px;
+    transition:transform .3s ease, opacity .25s ease;
+  }
+  .burger.active .bar:nth-child(1){
+    transform:translateY(7px) rotate(45deg);
+  }
+  .burger.active .bar:nth-child(2){
+    opacity:0;
+    transform:scaleX(0);
+  }
+  .burger.active .bar:nth-child(3){
+    transform:translateY(-7px) rotate(-45deg);
+  }
+
+  /* ---------- hero ---------- */
+  .hero{padding:96px 0 80px;text-align:center}
+  .hero h1{font-size:clamp(2.4rem,6vw,4.2rem);margin:22px 0 20px}
+  .hero h1 em{font-style:italic;color:var(--copper)}
+  .hero p{max-width:600px;margin:0 auto;color:var(--muted);font-size:17px;font-weight:300}
+  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+  .trust{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;margin-top:56px;
+    font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#6E7772}
+
+  /* ---------- sections ---------- */
+  section{padding:80px 0;scroll-margin-top:80px}
+  .sec-head{max-width:620px;margin-bottom:44px}
+  .sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:14px 0 12px}
+  .sec-head p{color:var(--muted);font-weight:300}
+
+  /* ---------- about ---------- */
+  .about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .about-card{
+    background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);
+    border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px;
+    transition:.3s;
+  }
+  .about-card:hover{border-color:rgba(198,161,91,.45);transform:translateY(-3px)}
+  .about-card .about-icon{font-size:26px;margin-bottom:14px;display:inline-block}
+  .about-card h3{font-size:20px;margin-bottom:10px;color:var(--ivory)}
+  .about-card p{font-size:14px;color:var(--muted);font-weight:300;line-height:1.65}
+
+  /* ---------- niches ---------- */
+  .niche-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+  .niche{
+    background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);
+    border:1px solid var(--line);border-radius:var(--radius);padding:24px;
+    transition:.3s;position:relative;overflow:hidden;
+  }
+  .niche:hover{border-color:rgba(198,161,91,.45);transform:translateY(-3px)}
+  .niche .icon{font-size:22px;margin-bottom:14px;display:block}
+  .niche h3{font-size:19px;margin-bottom:8px}
+  .niche p{font-size:14px;color:var(--muted);font-weight:300}
+  .niche .more{display:inline-block;margin-top:16px;font-size:12.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--bronze)}
+
+  /* ---------- filters ---------- */
+  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+  .chip{
+    padding:9px 18px;border-radius:999px;border:1px solid var(--line);
+    background:transparent;color:var(--muted);font-size:13px;cursor:pointer;
+    transition:.2s;font-family:'Inter',sans-serif;
+  }
+  .chip:hover{color:var(--ivory);border-color:rgba(198,161,91,.5)}
+  .chip.active{background:var(--bronze);color:#0C1013;border-color:var(--bronze);font-weight:500}
+
+  /* ---------- prompts ---------- */
+  .prompt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+  .prompt{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px;display:flex;flex-direction:column;position:relative;transition:.3s;
+  }
+  .prompt:hover{border-color:rgba(198,161,91,.35)}
+  .prompt .tags{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;
+    border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .tag.tool{color:var(--bronze);border-color:rgba(198,161,91,.3)}
+  .prompt h3{font-size:19px;margin-bottom:10px}
+  .prompt .desc{font-size:13.5px;color:var(--muted);font-weight:300;margin-bottom:16px}
+  .prompt pre{
+    background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:10px;
+    padding:16px;font-family:'Inter',monospace;font-size:12.5px;line-height:1.65;
+    color:#C9D1CB;white-space:pre-wrap;word-break:break-word;margin-bottom:16px;
+    max-height:190px;overflow:auto;
+  }
+  .prompt pre b{color:var(--copper);font-weight:500}
+  .prompt-foot{display:flex;gap:10px;margin-top:auto}
+  .copy-btn{
+    flex:1;padding:11px;border-radius:10px;border:1px solid var(--line);
+    background:transparent;color:var(--ivory);font-size:13px;cursor:pointer;transition:.2s;
+    font-family:'Inter',sans-serif;
+  }
+  .copy-btn:hover{background:var(--bronze);color:#0C1013;border-color:var(--bronze)}
+  .copy-btn.done{background:#2E4A3A;color:#BFE0C9;border-color:#2E4A3A}
+
+  /* locked premium card */
+  .prompt.locked pre{filter:blur(6px);user-select:none;pointer-events:none}
+  .lock-bar{
+    position:absolute;left:0;right:0;bottom:0;padding:22px;
+    background:linear-gradient(0deg,var(--card) 30%,transparent);
+    display:flex;align-items:flex-end;justify-content:space-between;gap:12px;
+  }
+  .lock-bar span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze)}
+  .badge-premium{
+    position:absolute;top:18px;right:18px;font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;padding:5px 11px;border-radius:999px;
+    background:rgba(198,161,91,.12);color:var(--bronze);border:1px solid rgba(198,161,91,.35);
+  }
+
+  /* ---------- ideas ---------- */
+  .ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+  .idea{border-left:2px solid var(--bronze);padding:6px 0 6px 20px}
+  .idea h4{font-size:15px;font-family:'Inter',sans-serif;font-weight:500;margin-bottom:6px}
+  .idea p{font-size:13.5px;color:var(--muted);font-weight:300}
+
+  /* ---------- steps ---------- */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .step{padding:28px;border:1px solid var(--line);border-radius:var(--radius);
+    background:linear-gradient(180deg,rgba(255,255,255,.03),transparent)}
+  .step .num{font-family:'Fraunces',serif;font-size:34px;color:var(--bronze);opacity:.6}
+  .step h4{font-family:'Inter',sans-serif;font-size:16px;font-weight:500;margin:10px 0 8px}
+  .step p{font-size:13.5px;color:var(--muted);font-weight:300}
+
+  /* ---------- CTA band ---------- */
+  .band{
+    border:1px solid rgba(198,161,91,.28);border-radius:24px;padding:56px 32px;text-align:center;
+    background:radial-gradient(500px 200px at 50% 0%,rgba(198,161,91,.14),transparent 70%),var(--ink2);
+  }
+  .band h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin-bottom:14px}
+  .band p{color:var(--muted);max-width:520px;margin:0 auto 28px;font-weight:300}
+
+  /* ---------- contact ---------- */
+  .contact-box{
+    background:radial-gradient(600px 300px at 50% 0%,rgba(198,161,91,.1),transparent 70%),var(--ink2);
+    border:1px solid var(--line);border-radius:24px;padding:48px 36px;
+  }
+  .contact-methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:28px}
+  .contact-card{
+    display:flex;align-items:center;gap:16px;padding:20px 22px;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    transition:.25s;text-decoration:none;color:inherit;
+  }
+  .contact-card:hover{
+    border-color:var(--bronze);transform:translateY(-2px);
+    box-shadow:0 8px 24px rgba(0,0,0,0.3);
+  }
+  .contact-icon{
+    font-size:24px;width:46px;height:46px;display:grid;place-items:center;
+    border-radius:12px;background:rgba(198,161,91,.1);color:var(--bronze);flex-shrink:0;
+  }
+  .contact-info h4{font-size:15px;font-weight:600;color:var(--ivory);margin-bottom:3px;font-family:'Inter',sans-serif}
+  .contact-info p{font-size:13px;color:var(--muted);font-weight:300}
+  .contact-arrow{margin-left:auto;color:var(--bronze);font-size:18px;transition:transform .2s ease}
+  .contact-card:hover .contact-arrow{transform:translateX(4px)}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);padding:40px 0;margin-top:40px}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+    font-size:13px;color:var(--muted)}
+  .foot a:hover{color:var(--copper)}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- toast ---------- */
+  .toast{
+    position:fixed;bottom:28px;left:50%;transform:translate(-50%,20px);
+    background:var(--bronze);color:#0C1013;padding:12px 22px;border-radius:999px;
+    font-size:13px;font-weight:500;opacity:0;pointer-events:none;transition:.3s;z-index:99;
+  }
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:860px){
+    .nav{height:68px}
+    .navlinks{
+      position:fixed;
+      top:68px;left:0;right:0;
+      background:rgba(18,24,28,0.96);
+      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid var(--line);
+      flex-direction:column;
+      align-items:stretch;
+      padding:24px 24px 30px;
+      gap:10px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.6);
+      transform:translateY(-120%);
+      opacity:0;
+      pointer-events:none;
+      transition:transform .3s cubic-bezier(0.16,1,0.3,1), opacity .25s ease;
+      z-index:49;
+    }
+    .navlinks.open{
+      transform:translateY(0);
+      opacity:1;
+      pointer-events:auto;
+    }
+    .nav-link{
+      font-size:16px;
+      padding:14px 18px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.02);
+      border:1px solid transparent;
+      display:block;
+    }
+    .nav-link:hover, .nav-link.active{
+      background:rgba(198,161,91,0.08);
+      border-color:rgba(198,161,91,0.25);
+      color:var(--ivory);
+    }
+    .nav-link::after{display:none}
+    .burger{display:flex}
+    .nav-actions .nav-cta{display:none}
+    section{padding:60px 0;scroll-margin-top:68px}
+    .hero{padding:64px 0 56px}
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="grid-bg"></div>
+
+<!-- ================= NAV ================= -->
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="DE DIGITALS home">
+      <span class="mark">DD</span>
+      DE DIGITALS <span class="x">×</span> DESTOO
+    </a>
+    <nav class="navlinks" id="navlinks" aria-label="Primary Navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#join" class="btn btn-primary nav-cta">Join WhatsApp</a>
+      <button class="burger" id="burger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navlinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero wrap">
+    <span class="eyebrow">AI Video • Prompts • Automation</span>
+    <h1>Create AI videos<br>people actually <em>watch.</em></h1>
+    <p>Ready-to-use prompts, niche advice and content ideas — built for beginners who want to make videos without a camera team.</p>
+    <div class="hero-cta">
+      <a href="#prompts" class="btn btn-primary">Browse Prompts</a>
+      <a href="#join" class="btn btn-ghost">Join WhatsApp Class</a>
+    </div>
+    <div class="trust">
+      <span>ChatGPT</span><span>CapCut</span><span>Runway</span><span>ElevenLabs</span><span>Canva</span>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">00 — Who We Are</span>
+      <h2>Built for the next generation of video creators</h2>
+      <p>DE DIGITALS × DESTOO combines cutting-edge AI prompting with proven social video frameworks so you can create captivating content in minutes.</p>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-card">
+        <span class="about-icon">⚡</span>
+        <h3>Zero Camera Needed</h3>
+        <p>You don't need expensive gear, studio lighting, or an editing team. Our AI workflows run directly from your phone or laptop.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-icon">🎯</span>
+        <h3>Tested Prompts</h3>
+        <p>Every prompt is field-tested for high retention on TikTok, Instagram Reels, and YouTube Shorts across competitive niches.</p>
+      </div>
+      <div class="about-card">
+        <span class="about-icon">🤝</span>
+        <h3>Community & Mentorship</h3>
+        <p>Get direct feedback, ongoing workflow updates, and live walkthroughs inside our active WhatsApp creator community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NICHES ================= -->
+  <section id="niches" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">01 — Find your lane</span>
+      <h2>Pick a niche. Get a head start.</h2>
+      <p>Every niche comes with advice, content angles and prompts you can copy today.</p>
+    </div>
+    <div class="niche-grid" id="nicheGrid"></div>
+  </section>
+
+  <!-- ================= PROMPTS ================= -->
+  <section id="prompts" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">02 — The library</span>
+      <h2>Ready-to-use prompts</h2>
+      <p>Copy, fill in the brackets, paste into your AI tool. Free prompts are open. Premium ones unlock with the class.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="prompt-grid" id="promptGrid"></div>
+  </section>
+
+  <!-- ================= IDEAS ================= -->
+  <section id="ideas" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">03 — Content ideas</span>
+      <h2>What to post first</h2>
+      <p>Simple angles that work on TikTok, Reels and Shorts.</p>
+    </div>
+    <div class="ideas reveal">
+      <div class="idea"><h4>The 3-tool tutorial</h4><p>Show one idea moving through ChatGPT → video tool → CapCut. People love watching the process.</p></div>
+      <div class="idea"><h4>Before / after</h4><p>Bad phone video vs AI-enhanced version. Fast, visual, undeniable.</p></div>
+      <div class="idea"><h4>Prompt of the day</h4><p>One prompt on screen, one example output. Endless, repeatable series.</p></div>
+      <div class="idea"><h4>Myth vs truth</h4><p>"AI video is expensive" → show the free stack. Kills objections.</p></div>
+      <div class="idea"><h4>Build it live</h4><p>Screen-record yourself making a 30-second video in real time.</p></div>
+      <div class="idea"><h4>Results recap</h4><p>Weekly: what you made, views, lessons. Builds trust for the paid class.</p></div>
+    </div>
+  </section>
+
+  <!-- ================= STEPS ================= -->
+  <section class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">04 — How it works</span>
+      <h2>Three steps, no fluff</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="num">01</div><h4>Choose a niche</h4><p>Start where you already have knowledge. Advice and angles are provided.</p></div>
+      <div class="step"><div class="num">02</div><h4>Copy a prompt</h4><p>Fill the brackets with your product, audience and tone.</p></div>
+      <div class="step"><div class="num">03</div><h4>Post it</h4><p>Generate, edit with captions, and publish. Repeat weekly.</p></div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section id="join" class="wrap">
+    <div class="band reveal">
+      <span class="eyebrow">Live class</span>
+      <h2>Learn it with us on WhatsApp</h2>
+      <p>We teach the full workflow step by step — scripting, AI generation, editing and automation. Premium prompts unlock for members.</p>
+      <a href="https://chat.whatsapp.com/Eb54laWXX9h1IBWsvos9xf?s=cl&p=a&mlu=4&ilr=4" class="btn btn-primary" target="_blank" rel="noopener">Join the WhatsApp Class</a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="wrap">
+    <div class="contact-box reveal">
+      <div class="sec-head" style="margin-bottom:28px">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Have questions? We're here to help.</h2>
+        <p>Whether you want to inquire about custom prompts, private coaching, brand partnerships, or masterclass support, reach out directly.</p>
+      </div>
+      <div class="contact-methods">
+        <a href="https://chat.whatsapp.com/Eb54laWXX9h1IBWsvos9xf?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-icon">💬</span>
+          <div class="contact-info">
+            <h4>WhatsApp Community</h4>
+            <p>Instant answers, discussions & masterclass link</p>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="mailto:contact@dedigitals.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <div class="contact-info">
+            <h4>Direct Email</h4>
+            <p>desunday01@gmail.com</p>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> DE DIGITALS × DESTOO</span>
+    <span>
+      <a href="#home">Home</a> &nbsp;·&nbsp;
+      <a href="#about">About</a> &nbsp;·&nbsp;
+      <a href="#contact">Contact</a> &nbsp;·&nbsp;
+      <a href="https://chat.whatsapp.com/Eb54laWXX9h1IBWsvos9xf?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener">WhatsApp</a>
+    </span>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Copied to clipboard</div>
+
+<script>
+/* =========================================================
+   1) EDIT NICHES HERE
+   ========================================================= */
+const NICHES = [
+  { icon:"🛍️", name:"Small Business", advice:"Show how AI cuts cost on ads, product videos and captions." },
+  { icon:"👗", name:"Fashion",       advice:"Lookbooks, styling tips, before/after outfit reels." },
+  { icon:"🍲", name:"Food",          advice:"Recipe reels, plating shots, restaurant promos." },
+  { icon:"🏠", name:"Real Estate",   advice:"Property tours, neighborhood explainers, agent branding." },
+  { icon:"💪", name:"Fitness",       advice:"Form tips, 30-day plans, myth-busting shorts." },
+  { icon:"📚", name:"Education",     advice:"Explain one concept in 30 seconds, every day." },
+  { icon:"🙏", name:"Faith",         advice:"Daily encouragement, scripture visuals, calm narration." },
+  { icon:"💰", name:"Affiliate",     advice:"Product demos, comparisons, honest reviews." },
+  { icon:"🔧", name:"Coming soon",   advice:"Your next niche goes here — edit the NICHES list." }
+];
+
+/* =========================================================
+   2) EDIT PROMPTS HERE
+   premium:true  -> locked card
+   Use [BRACKETS] for placeholders
+   ========================================================= */
+const PROMPTS = [
+  {
+    title:"30-Second Video Script",
+    tool:"ChatGPT",
+    niche:"Any",
+    premium:false,
+    desc:"Turns any idea into a tight, hook-first short video script.",
+    body:`Write a 30-second short video script about [TOPIC] for [AUDIENCE].
+
+Rules:
+- First line must be a scroll-stopping hook (max 8 words).
+- Structure: Hook → Problem → 3 quick tips → CTA.
+- Spoken tone, short sentences, no jargon.
+- Add on-screen text cues in [brackets].
+- End with a CTA to [ACTION].
+
+Output as a table: Time | Voiceover | On-screen text.`
+  },
+  {
+    title:"Product Promo Reel",
+    tool:"ChatGPT + Runway",
+    niche:"Small Business",
+    premium:false,
+    desc:"Script + visual direction for a short product promo.",
+    body:`Create a 20-second product promo for [PRODUCT].
+
+Audience: [AUDIENCE]
+Pain point: [PAIN POINT]
+Tone: [TONE]
+
+Give me:
+1. A 3-line hook
+2. Scene-by-scene shot list (5 shots, 4 seconds each)
+3. Voiceover line per shot
+4. Caption + 5 hashtags
+
+Keep language simple and conversational.`
+  },
+  {
+    title:"Faceless Video Blueprint",
+    tool:"Any AI Video Tool",
+    niche:"Any",
+    premium:false,
+    desc:"Full plan for a faceless channel video with b-roll direction.",
+    body:`Plan a faceless 60-second video on [TOPIC].
+
+Output:
+- Hook (2 options)
+- 6 b-roll prompts I can paste into an AI video generator
+- Narration script (about 150 words)
+- Suggested background music mood
+- Caption and 5 hashtags`
+  },
+  {
+    title:"Niche Content Calendar",
+    tool:"ChatGPT",
+    niche:"Any",
+    premium:false,
+    desc:"30 days of video ideas for one niche, ready to schedule.",
+    body:`Create a 30-day content calendar for a [NICHE] creator.
+
+Format: Day | Video idea | Hook | Format (talking head / faceless / screen recording)
+
+Rules:
+- 40% educational, 30% entertaining, 20% personal story, 10% promotional.
+- No repeated ideas.
+- Keep hooks under 10 words.`
+  },
+  {
+    title:"Restaurant Promo Reel",
+    tool:"ChatGPT + CapCut",
+    niche:"Food",
+    premium:false,
+    desc:"Sensory, appetite-driven promo script for food businesses.",
+    body:`Write a 15-second food promo reel for [DISH or RESTAURANT].
+
+Include:
+- Sensory hook (sound, smell, texture)
+- 4 rapid shots with captions
+- One closing CTA
+- A caption with local flavor and 5 hashtags
+
+Tone: warm, mouth-watering, no clichés.`
+  },
+  {
+    title:"Voiceover Script — Calm Tone",
+    tool:"ElevenLabs",
+    niche:"Faith",
+    premium:true,
+    desc:"Short, calm, reflective narration script optimized for AI voice.",
+    body:`Write a 45-second calm voiceover on [THEME].
+
+Guidelines:
+- 2nd person, gentle, no preaching
+- Short sentences, natural pauses marked with "..."
+- One anchor line repeated at start and end
+- End with a soft call to reflect, not a hard CTA`
+  },
+  {
+    title:"Property Tour Script",
+    tool:"ChatGPT + HeyGen",
+    niche:"Real Estate",
+    premium:true,
+    desc:"Agent-style walkthrough script with room-by-room cues.",
+    body:`Write a 60-second property tour script for [PROPERTY TYPE] in [LOCATION].
+
+Structure:
+- Hook: the single most attractive feature
+- Room-by-room walkthrough (4 rooms, one line each)
+- Lifestyle angle (who this suits)
+- CTA to [BOOK A VIEWING]
+
+Add on-screen text cues and a closing caption with 5 hashtags.`
+  },
+  {
+    title:"Fitness Myth-Buster Short",
+    tool:"ChatGPT",
+    niche:"Fitness",
+    premium:true,
+    desc:"Debunk a fitness myth with a punchy, shareable script.",
+    body:`Write a 30-second myth-buster short about [MYTH].
+
+Structure:
+- State the myth as if you believe it (hook)
+- "Here's the truth..." reveal
+- 2 supporting points
+- One actionable tip
+- CTA: [ACTION]
+
+Tone: confident, friendly, no shaming.`
+  }
+];
+
+/* =========================================================
+   3) RENDER — no need to edit below
+   ========================================================= */
+const $ = s => document.querySelector(s);
+
+// niches
+$("#nicheGrid").innerHTML = NICHES.map(n => `
+  <div class="niche reveal">
+    <span class="icon">${n.icon}</span>
+    <h3>${n.name}</h3>
+    <p>${n.advice}</p>
+    <a href="#prompts" class="more">See prompts →</a>
+  </div>
+`).join("");
+
+// filters
+const niches = ["All", ...new Set(PROMPTS.map(p => p.niche))];
+$("#filters").innerHTML = niches.map((n,i) =>
+  `<button class="chip${i===0?" active":""}" data-filter="${n}">${n}</button>`
+).join("");
+
+// prompts
+function renderPrompts(filter="All"){
+  const list = PROMPTS.filter(p => filter==="All" || p.niche===filter);
+  $("#promptGrid").innerHTML = list.map((p,i) => {
+    const idx = PROMPTS.indexOf(p);
+    const body = p.body.replace(/\[([^\]]+)\]/g,"<b>[$1]</b>");
+    if(p.premium){
+      return `
+      <article class="prompt locked reveal">
+        <span class="badge-premium">Premium</span>
+        <div class="tags"><span class="tag tool">${p.tool}</span><span class="tag">${p.niche}</span></div>
+        <h3>${p.title}</h3>
+        <p class="desc">${p.desc}</p>
+        <pre>${body}</pre>
+        <div class="lock-bar">
+          <span>Members only</span>
+          <a href="#join" class="btn btn-primary" style="padding:9px 18px;font-size:13px">Unlock</a>
+        </div>
+      </article>`;
+    }
+    return `
+      <article class="prompt reveal">
+        <div class="tags"><span class="tag tool">${p.tool}</span><span class="tag">${p.niche}</span></div>
+        <h3>${p.title}</h3>
+        <p class="desc">${p.desc}</p>
+        <pre id="body-${idx}">${body}</pre>
+        <div class="prompt-foot">
+          <button class="copy-btn" data-idx="${idx}">Copy prompt</button>
+        </div>
+      </article>`;
+  }).join("");
+  observeReveals();
+}
+
+// copy
+document.addEventListener("click", e => {
+  const btn = e.target.closest(".copy-btn");
+  if(!btn) return;
+  const p = PROMPTS[+btn.dataset.idx];
+  navigator.clipboard.writeText(p.body).then(() => {
+    btn.textContent = "Copied ✓";
+    btn.classList.add("done");
+    const t = $("#toast"); t.classList.add("show");
+    setTimeout(() => { t.classList.remove("show"); }, 1600);
+    setTimeout(() => { btn.textContent = "Copy prompt"; btn.classList.remove("done"); }, 1800);
+  });
+});
+
+// filters click
+$("#filters").addEventListener("click", e => {
+  const chip = e.target.closest(".chip");
+  if(!chip) return;
+  document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+  chip.classList.add("active");
+  renderPrompts(chip.dataset.filter);
+});
+
+// navigation & responsive menu
+const burger = $("#burger");
+const navlinks = $("#navlinks");
+const siteHeader = $("#siteHeader");
+
+function toggleMenu(forceState) {
+  const isOpen = typeof forceState === "boolean" ? forceState : !navlinks.classList.contains("open");
+  navlinks.classList.toggle("open", isOpen);
+  burger.classList.toggle("active", isOpen);
+  burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  document.body.style.overflow = isOpen && window.innerWidth <= 860 ? "hidden" : "";
+}
+
+burger.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleMenu();
+});
+
+navlinks.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => toggleMenu(false));
+});
+
+document.addEventListener("click", (e) => {
+  if (navlinks.classList.contains("open") && !navlinks.contains(e.target) && !burger.contains(e.target)) {
+    toggleMenu(false);
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && navlinks.classList.contains("open")) {
+    toggleMenu(false);
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 860 && navlinks.classList.contains("open")) {
+    toggleMenu(false);
+  }
+});
+
+// header scroll appearance
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    siteHeader.classList.add("scrolled");
+  } else {
+    siteHeader.classList.remove("scrolled");
+  }
+}, { passive: true });
+
+// active nav link scrollspy
+const navItemLinks = Array.from(document.querySelectorAll("#navlinks .nav-link"));
+const navSectionIds = ["home", "about", "contact"];
+const navSections = navSectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+if ("IntersectionObserver" in window && navSections.length) {
+  const navSpyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
+        navItemLinks.forEach(link => {
+          const targetHref = link.getAttribute("href");
+          if (targetHref === `#${id}`) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      }
+    });
+  }, { rootMargin: "-25% 0px -65% 0px" });
+
+  navSections.forEach(sec => navSpyObserver.observe(sec));
+}
+
+// reveal on scroll
+let io;
+function observeReveals(){
+  if(!io){
+    io = new IntersectionObserver(entries => {
+      entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, { threshold:.12 });
+  }
+  document.querySelectorAll(".reveal:not(.in)").forEach(el => io.observe(el));
+}
+
+// init
+renderPrompts();
+observeReveals();
+$("#year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
