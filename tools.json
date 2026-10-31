@@ -1,0 +1,412 @@
+{
+ "updated": "October 2026",
+ "intro": "You've got the starter kit. These are the tools creators reach for next. Prices and free limits change often, so treat them as a guide and confirm on each tool's own site.",
+ "categories": [
+  "Video",
+  "Image",
+  "Voice & Music",
+  "Writing & Research",
+  "Editing",
+  "Automation"
+ ],
+ "tools": [
+  {
+   "id": "flow",
+   "emoji": "🎬",
+   "name": "Google Flow (Veo 3.1)",
+   "category": "Video",
+   "level": "Beginner",
+   "url": "https://labs.google/fx/tools/flow",
+   "best": "Cinematic clips with sound, including vertical 9:16.",
+   "free": "50 credits a day with no rollover, enough for a few short clips.",
+   "paid": "Google AI Pro is about $19.99 a month with 1,000 credits.",
+   "earn": "Check",
+   "earnNote": "Check Google's terms for your plan before you monetize.",
+   "tip": "Start with the Lite or Fast model to save credits.",
+   "watchOut": "Free daily credits don't cover top-quality renders."
+  },
+  {
+   "id": "kling",
+   "emoji": "🎞️",
+   "name": "Kling 3.0",
+   "category": "Video",
+   "level": "Intermediate",
+   "url": "https://klingai.com",
+   "best": "Strong value for longer, steadier clips.",
+   "free": "About 66 free credits a day, with a watermark.",
+   "paid": "Standard plans start at roughly $7 to $10 a month.",
+   "earn": "No",
+   "earnNote": "Free output is non-commercial. You need a paid plan to monetize.",
+   "tip": "Use image-to-video with your own character image to keep the look consistent.",
+   "watchOut": "The official pricing page is region-gated, so confirm inside the app."
+  },
+  {
+   "id": "runway",
+   "emoji": "🎥",
+   "name": "Runway Gen-4.5",
+   "category": "Video",
+   "level": "Intermediate",
+   "url": "https://runwayml.com",
+   "best": "Creative control and editing tools in one place, with strong lip sync.",
+   "free": "A limited set of free credits that do not refill.",
+   "paid": "Paid plans start from around $12 a month. Check the site for current prices.",
+   "earn": "Check",
+   "earnNote": "Read the plan's commercial terms before you publish for money.",
+   "tip": "It's good for editing clips you already have, not just generating new ones.",
+   "watchOut": "Credits go fast when you retry, so plan your shots first."
+  },
+  {
+   "id": "seedance",
+   "emoji": "🌊",
+   "name": "Seedance 2.0",
+   "category": "Video",
+   "level": "Intermediate",
+   "url": "https://dreamina.capcut.com",
+   "best": "Stylised looks and multi-input control, with sound generated together with video.",
+   "free": "Check Dreamina for the current free credits.",
+   "paid": "Pricing varies by region and plan. Check the site.",
+   "earn": "Check",
+   "earnNote": "Confirm the commercial terms for your country and plan.",
+   "tip": "Great for painted, clay and other stylised looks.",
+   "watchOut": "Availability and pricing differ between countries."
+  },
+  {
+   "id": "gptimage",
+   "emoji": "🖼️",
+   "name": "GPT Image 2 (in ChatGPT)",
+   "category": "Image",
+   "level": "Beginner",
+   "url": "https://chatgpt.com",
+   "best": "Following long, detailed instructions and putting readable text inside images.",
+   "free": "Basic image creation on the free plan, with daily limits.",
+   "paid": "ChatGPT Plus is about $20 a month.",
+   "earn": "Check",
+   "earnNote": "Check OpenAI's current terms for your plan.",
+   "tip": "Ask for edits in the same chat instead of starting over.",
+   "watchOut": "Limits change. Look under Settings, then Usage."
+  },
+  {
+   "id": "nanobanana",
+   "emoji": "🍌",
+   "name": "Nano Banana 2 (in Gemini)",
+   "category": "Image",
+   "level": "Beginner",
+   "url": "https://gemini.google.com",
+   "best": "The best free option, and strong at keeping one character consistent.",
+   "free": "Roughly 20 images a day in the Gemini app. Limits change.",
+   "paid": "Google AI Plus starts around $7.99 a month, and Pro at about $19.99 adds Nano Banana Pro.",
+   "earn": "Check",
+   "earnNote": "Check Google's terms and any watermark rules before you monetize.",
+   "tip": "Upload your character and change one thing at a time.",
+   "watchOut": "Free outputs can be smaller and watermarked."
+  },
+  {
+   "id": "midjourney",
+   "emoji": "🎨",
+   "name": "Midjourney V8",
+   "category": "Image",
+   "level": "Intermediate",
+   "url": "https://midjourney.com",
+   "best": "Painterly, artistic looks and strong art direction.",
+   "free": "No free tier.",
+   "paid": "From about $10 a month.",
+   "earn": "Check",
+   "earnNote": "Commercial use is allowed on paid plans, and larger businesses need higher plans.",
+   "tip": "Use style references to keep a whole series looking the same.",
+   "watchOut": "Weaker than GPT Image at following long literal instructions."
+  },
+  {
+   "id": "ideogram",
+   "emoji": "🔤",
+   "name": "Ideogram",
+   "category": "Image",
+   "level": "Beginner",
+   "url": "https://ideogram.ai",
+   "best": "Posters, thumbnails and any image that needs readable text.",
+   "free": "A small number of free credits each day.",
+   "paid": "Check the site for current plans.",
+   "earn": "Yes",
+   "earnNote": "Reported to allow commercial use on the free tier. Confirm in their terms.",
+   "tip": "Perfect for thumbnails and quote cards.",
+   "watchOut": "Always confirm the current terms on their site."
+  },
+  {
+   "id": "elevenlabs",
+   "emoji": "🎙️",
+   "name": "ElevenLabs",
+   "category": "Voice & Music",
+   "level": "Intermediate",
+   "url": "https://elevenlabs.io",
+   "best": "Natural voiceovers and narration in many languages, plus music with clear commercial licensing.",
+   "free": "A free plan with limited credits.",
+   "paid": "Starter is around $5 to $6 a month and adds a commercial licence.",
+   "earn": "No",
+   "earnNote": "Free output has no commercial licence and asks you to credit ElevenLabs in the title.",
+   "tip": "Narrate your own script, then adjust pace and pauses.",
+   "watchOut": "Don't clone anyone's voice without their permission. Starter music excludes streaming-service release."
+  },
+  {
+   "id": "suno",
+   "emoji": "🎵",
+   "name": "Suno",
+   "category": "Voice & Music",
+   "level": "Beginner",
+   "url": "https://suno.com",
+   "best": "Full songs with vocals from a text prompt.",
+   "free": "About 50 credits a day, roughly 10 songs.",
+   "paid": "Pro is about $8 a month billed yearly, or about $10 monthly.",
+   "earn": "No",
+   "earnNote": "Free songs are for personal use only. Commercial rights need Pro or Premier, and only cover songs made while you're subscribed.",
+   "tip": "Write your own lyrics first, then generate.",
+   "watchOut": "Record-label lawsuits over training data are still unresolved, which is a risk for client work."
+  },
+  {
+   "id": "chatgpt",
+   "emoji": "💬",
+   "name": "ChatGPT",
+   "category": "Writing & Research",
+   "level": "Beginner",
+   "url": "https://chatgpt.com",
+   "best": "Brainstorming, scripts, captions and quick image edits.",
+   "free": "A free plan with limits.",
+   "paid": "Plus is about $20 a month.",
+   "tip": "Give it your audience, tone and length every time.",
+   "watchOut": "Verify facts it states, especially dates and numbers."
+  },
+  {
+   "id": "gemini",
+   "emoji": "✨",
+   "name": "Gemini",
+   "category": "Writing & Research",
+   "level": "Beginner",
+   "url": "https://gemini.google.com",
+   "best": "Research that uses Google's knowledge, plus image creation with Nano Banana.",
+   "free": "A free tier with daily limits.",
+   "paid": "Google AI Plus and Pro plans raise the limits.",
+   "tip": "Ask it to list its sources, then open them yourself.",
+   "watchOut": "Check any claim before it goes in a video."
+  },
+  {
+   "id": "claude",
+   "emoji": "🧠",
+   "name": "Claude",
+   "category": "Writing & Research",
+   "level": "Beginner",
+   "url": "https://claude.ai",
+   "best": "Long documents, careful writing and structured planning.",
+   "free": "A free plan with limits.",
+   "paid": "Paid plans give higher limits.",
+   "tip": "Paste your whole script and ask for specific edits.",
+   "watchOut": "Verify facts, as with any AI tool."
+  },
+  {
+   "id": "perplexity",
+   "emoji": "🔎",
+   "name": "Perplexity",
+   "category": "Writing & Research",
+   "level": "Beginner",
+   "url": "https://perplexity.ai",
+   "best": "Research answers with sources you can click.",
+   "free": "A free tier.",
+   "paid": "Paid plans add deeper research.",
+   "tip": "Use it for the facts, then write the script yourself.",
+   "watchOut": "Open the sources. Don't trust the summary alone."
+  },
+  {
+   "id": "notebooklm",
+   "emoji": "📚",
+   "name": "NotebookLM",
+   "category": "Writing & Research",
+   "level": "Beginner",
+   "url": "https://notebooklm.google.com",
+   "best": "Upload your sources and ask questions about only those.",
+   "free": "Free to use, with limits.",
+   "paid": "Higher limits come with Google's paid plans.",
+   "tip": "Great for fact-checking a documentary script against your sources.",
+   "watchOut": "It only knows what you upload."
+  },
+  {
+   "id": "capcut",
+   "emoji": "✂️",
+   "name": "CapCut",
+   "category": "Editing",
+   "level": "Beginner",
+   "url": "https://capcut.com",
+   "best": "Fast mobile and desktop editing with auto-captions.",
+   "free": "Core editing is free. Many effects and AI tools are paid or capped.",
+   "paid": "Roughly $9.99 (Standard) to $19.99 (Pro) a month, varying by region.",
+   "earn": "Check",
+   "earnNote": "Check the licence on templates, music and effects before you monetize.",
+   "tip": "Save your caption style as a template so every video matches.",
+   "watchOut": "Prices vary by region and by where you subscribe."
+  },
+  {
+   "id": "descript",
+   "emoji": "📝",
+   "name": "Descript",
+   "category": "Editing",
+   "level": "Intermediate",
+   "url": "https://descript.com",
+   "best": "Edit a video by editing its transcript, and remove filler words fast.",
+   "free": "A free plan with limits.",
+   "paid": "Check the site for current plans.",
+   "tip": "Great for explainers and voiceover-led videos.",
+   "watchOut": "Always listen to the final cut. Automatic cuts can clip words."
+  },
+  {
+   "id": "opusclip",
+   "emoji": "🪄",
+   "name": "OpusClip",
+   "category": "Editing",
+   "level": "Intermediate",
+   "url": "https://opus.pro",
+   "best": "Turn one long video into several short clips with captions.",
+   "free": "Check the site for the current free plan.",
+   "paid": "Check the site for current plans.",
+   "tip": "Feed it your longer YouTube videos and pick the best three clips.",
+   "watchOut": "Review every clip. Auto-picked moments can miss context."
+  },
+  {
+   "id": "canva",
+   "emoji": "🧩",
+   "name": "Canva",
+   "category": "Editing",
+   "level": "Beginner",
+   "url": "https://canva.com",
+   "best": "Thumbnails, quote cards, carousels and simple video.",
+   "free": "A free plan. Some assets are Pro-only.",
+   "paid": "Canva Pro is a paid plan.",
+   "earn": "Check",
+   "earnNote": "Read the licence on stock elements, especially Pro-only ones.",
+   "tip": "Make a template for your thumbnails and reuse it.",
+   "watchOut": "Free plans limit some elements and downloads."
+  },
+  {
+   "id": "make",
+   "emoji": "🔁",
+   "name": "Make",
+   "category": "Automation",
+   "level": "Intermediate",
+   "url": "https://make.com",
+   "best": "Visual automations that connect your apps without code.",
+   "free": "1,000 operations a month and 2 active scenarios.",
+   "paid": "Core is from about $9 to $11 a month.",
+   "tip": "Start with one scenario: a new idea in Sheets, a script from ChatGPT, saved in Docs.",
+   "watchOut": "Every step uses operations, so keep scenarios short."
+  },
+  {
+   "id": "zapier",
+   "emoji": "⚡",
+   "name": "Zapier",
+   "category": "Automation",
+   "level": "Beginner",
+   "url": "https://zapier.com",
+   "best": "The simplest setup and the most app connections.",
+   "free": "100 tasks a month and 5 Zaps.",
+   "paid": "Paid plans start at about $20 to $30 a month.",
+   "tip": "Use it for one simple job, like saving form replies to a sheet.",
+   "watchOut": "The free plan runs out fast if your automation has several steps."
+  },
+  {
+   "id": "n8n",
+   "emoji": "🧬",
+   "name": "n8n",
+   "category": "Automation",
+   "level": "Advanced",
+   "url": "https://n8n.io",
+   "best": "The most flexible option, and the strongest for AI-powered workflows.",
+   "free": "Self-hosting is free with no execution limits. You pay for your own server.",
+   "paid": "Cloud plans start at about $20 a month (2,500 executions).",
+   "tip": "Try the cloud trial before you attempt self-hosting.",
+   "watchOut": "Self-hosting needs technical setup and ongoing upkeep."
+  }
+ ],
+ "retired": "OpenAI shut down Sora in 2026 (the web app on April 26 and the API on September 24). If a tool is sold to you as Sora access, it isn't an official product. Veo 3.1, Kling, Runway and Seedance are the main alternatives.",
+ "licenseTitle": "Free doesn't always mean you can earn",
+ "licenseIntro": "Many free plans let you try a tool but not use the result to make money. Check this before you monetize a video.",
+ "licenseCheck": [
+  {
+   "tool": "Kling (free plan)",
+   "status": "No",
+   "note": "Non-commercial, and the clips are watermarked."
+  },
+  {
+   "tool": "ElevenLabs (free plan)",
+   "status": "No",
+   "note": "No commercial licence, and a credit is required in the title."
+  },
+  {
+   "tool": "Suno (free plan)",
+   "status": "No",
+   "note": "Personal use only. Rights apply from a paid plan, for songs made while subscribed."
+  },
+  {
+   "tool": "Bing Image Creator",
+   "status": "No",
+   "note": "Free output is for personal, non-commercial use."
+  },
+  {
+   "tool": "Ideogram (free plan)",
+   "status": "Yes",
+   "note": "Reported to allow commercial use. Confirm in their terms."
+  }
+ ],
+ "stacks": [
+  {
+   "name": "The $0 stack",
+   "price": "Free",
+   "tools": [
+    "ChatGPT: ideas and scripts",
+    "Gemini (Nano Banana 2): images",
+    "Google Flow: short clips",
+    "CapCut: editing"
+   ],
+   "note": "Perfect for learning. Check each tool's licence before you monetize, because some free output is non-commercial."
+  },
+  {
+   "name": "The $20 to $25 stack",
+   "price": "About $20 to $25 a month",
+   "tools": [
+    "Kling Standard: clips with commercial use",
+    "ElevenLabs Starter: voiceover with a commercial licence",
+    "Suno Pro: original music",
+    "CapCut free: editing"
+   ],
+   "note": "A creator-ready setup where every piece you pay for comes with commercial rights."
+  },
+  {
+   "name": "The automation stack",
+   "price": "Free to start",
+   "tools": [
+    "Make free plan: connect your apps",
+    "ChatGPT: script drafts",
+    "Google Sheets: your idea list",
+    "Docs: finished scripts"
+   ],
+   "note": "Move from idea to a first script automatically, then add your own edits and voice."
+  }
+ ],
+ "workflows": [
+  {
+   "id": "batch-system",
+   "emoji": "🗂️",
+   "name": "Faceless channel batch system",
+   "why": "Plan, script and produce a week of videos in one sitting.",
+   "teaser": "Includes the full automation map, the prompt for every step, and a weekly batching schedule."
+  },
+  {
+   "id": "consistency-flow",
+   "emoji": "🧍",
+   "name": "One-character consistency workflow",
+   "why": "Keep the same character across images and video clips.",
+   "teaser": "Includes the reference-sheet method, the exact edit prompts, and a clip-to-clip checklist."
+  },
+  {
+   "id": "voice-pipeline",
+   "emoji": "🎙️",
+   "name": "Voiceover-to-video pipeline",
+   "why": "Turn a script into a narrated, captioned video fast.",
+   "teaser": "Includes voice settings, pacing templates, and a CapCut caption preset."
+  }
+ ]
+}

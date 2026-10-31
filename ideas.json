@@ -1,0 +1,465 @@
+{
+ "updated": "October 2026",
+ "intro": "Don't copy a trend. Pick one format, add your own idea to it, and make it feel like yours. Formats that break out usually pair a real human idea with an AI effect.",
+ "platformTips": [
+  {
+   "platform": "TikTok",
+   "tip": "Completion rate matters most. Keep it tight, usually 15 to 35 seconds, and cut anything that doesn't earn its place."
+  },
+  {
+   "platform": "Instagram Reels",
+   "tip": "Trending audio and saves help a lot. Make something people want to keep, like a tip, a template or a pretty loop."
+  },
+  {
+   "platform": "YouTube Shorts",
+   "tip": "The very first frame decides whether people stay. Start on your strongest image, not a title card."
+  }
+ ],
+ "hooks": [
+  {
+   "name": "Contradiction",
+   "text": "Everyone says [COMMON ADVICE]. Here's why it doesn't work for [AUDIENCE]."
+  },
+  {
+   "name": "Specific number",
+   "text": "[NUMBER] [THINGS] that [RESULT] in [TIME]."
+  },
+  {
+   "name": "Start mid-story",
+   "text": "She had 3 minutes before [EVENT]. Then [SURPRISE] happened."
+  },
+  {
+   "name": "Stop doing this",
+   "text": "Stop doing [COMMON MISTAKE] if you want [RESULT]."
+  },
+  {
+   "name": "Result first",
+   "text": "This took me [SHORT TIME] with free tools. Here's exactly how."
+  },
+  {
+   "name": "Curiosity gap",
+   "text": "The strange reason [THING] always [HAPPENS]."
+  },
+  {
+   "name": "Relatable pain",
+   "text": "If you've ever [PAINFUL SITUATION], this is for you."
+  },
+  {
+   "name": "Challenge",
+   "text": "I tried [THING] every day for [N] days. Here's what changed."
+  },
+  {
+   "name": "Myth vs truth",
+   "text": "Myth: [MYTH]. Truth: [TRUTH]."
+  },
+  {
+   "name": "Tiny promise",
+   "text": "One [TOOL] trick that saves you [TIME]."
+  }
+ ],
+ "formats": [
+  {
+   "id": "claymation",
+   "emoji": "🧱",
+   "name": "Claymation mini-scenes",
+   "platforms": [
+    "TikTok",
+    "Reels",
+    "Shorts"
+   ],
+   "length": "10-20 sec",
+   "level": "Beginner",
+   "niches": [
+    "Storytelling",
+    "Children's Content",
+    "Folktales",
+    "Small Business"
+   ],
+   "why": "The handmade clay look feels warm and nostalgic, so people share it without the uncanny feeling that realistic AI sometimes gives.",
+   "steps": [
+    "Pick one tiny story, such as a clay fruit seller whose mango rolls away.",
+    "Generate 3 or 4 still images using the same style words every time.",
+    "Animate each image for 4 to 5 seconds.",
+    "Add small sound effects and gentle music.",
+    "Add a caption and post."
+   ],
+   "prompt": "Stop-motion clay animation of [SUBJECT] [ACTION] in [SETTING]. Visible thumbprints, soft studio light, slight handmade imperfections, shallow depth of field. Vertical 9:16. No text.",
+   "hooks": [
+    "This tiny clay seller has a big problem...",
+    "Watch what happens when the clay mango rolls away."
+   ],
+   "watchOut": "Keep your character identical across shots. Paste the same character description into every prompt."
+  },
+  {
+   "id": "cute3d",
+   "emoji": "🧸",
+   "name": "Cute 3D character portraits",
+   "platforms": [
+    "TikTok",
+    "Reels"
+   ],
+   "length": "7-15 sec",
+   "level": "Beginner",
+   "niches": [
+    "Small Business",
+    "Fashion",
+    "Education"
+   ],
+   "why": "People love seeing themselves, their pets or their products as cartoon characters, so they comment, share and ask how you did it.",
+   "steps": [
+    "Choose a subject you have the right to use: yourself, your pet or your product.",
+    "Ask for a stylised 3D cartoon version in an original design.",
+    "Make 3 versions with different outfits or moods.",
+    "Show a quick before and after, real photo then character.",
+    "End with a question that invites people to ask for their own."
+   ],
+   "prompt": "Turn [SUBJECT, e.g. my pet cat] into a cute stylised 3D cartoon character: big expressive eyes, soft studio lighting, pastel background. Original character design, not a copy of any film character. Keep the real [FEATURE, e.g. orange fur] recognisable.",
+   "hooks": [
+    "I turned my cat into a cartoon. Look at the eyes.",
+    "Comment your pet and I'll make it next."
+   ],
+   "watchOut": "Don't ask for a named studio's look or any copyrighted character. Get permission before using photos of other people, and never use photos of children without a parent's consent."
+  },
+  {
+   "id": "painterly",
+   "emoji": "🎨",
+   "name": "Painterly everyday scenes",
+   "platforms": [
+    "Reels",
+    "Shorts",
+    "TikTok"
+   ],
+   "length": "8-15 sec",
+   "level": "Beginner",
+   "niches": [
+    "Storytelling",
+    "Faith-based",
+    "Folktales",
+    "Education"
+   ],
+   "why": "Ordinary moments, such as a market morning or rain on a zinc roof, look magical as hand-painted animation. These get saved and shared.",
+   "steps": [
+    "List 5 everyday moments your audience recognises.",
+    "Generate one painted still for each.",
+    "Animate gentle motion only: wind, rain, steam, moving clouds.",
+    "Add soft music or the natural sound of the scene.",
+    "Caption it with a feeling, not a description."
+   ],
+   "prompt": "Hand-painted 2D animation of [EVERYDAY SCENE], watercolour backgrounds, soft pastel palette, gentle wind moving hair and leaves, calm mood. Original art style. No text.",
+   "hooks": [
+    "Your Monday morning, but painted.",
+    "A Lagos market at 6am, as a painting."
+   ],
+   "watchOut": "Don't name a living artist or a studio in the prompt. Describe the look instead."
+  },
+  {
+   "id": "talking-objects",
+   "emoji": "☕",
+   "name": "Talking objects",
+   "platforms": [
+    "TikTok",
+    "Reels"
+   ],
+   "length": "10-25 sec",
+   "level": "Beginner",
+   "niches": [
+    "Small Business",
+    "Food",
+    "Education"
+   ],
+   "why": "A face and a complaint make an ordinary thing instantly funny, and it doubles as a gentle way to tell a product story.",
+   "steps": [
+    "Pick an object people have strong feelings about, like a kettle, a generator or a phone charger.",
+    "Write a 3-line complaint in its voice.",
+    "Generate the object with an animated face, talking to camera.",
+    "Add a voiceover and captions.",
+    "End with a punchline or a tip."
+   ],
+   "prompt": "A [OBJECT, e.g. kettle] with a natural animated face, [EMOTION] expression, talking to camera about [COMPLAINT]. Soft kitchen light, shallow depth of field, vertical 9:16.",
+   "hooks": [
+    "My kettle has filed a complaint.",
+    "If your generator could talk, it would say this."
+   ],
+   "watchOut": "If it's an ad, say so. Don't make health, money or results claims through a cartoon voice."
+  },
+  {
+   "id": "what-if",
+   "emoji": "🌀",
+   "name": "What-if scenarios",
+   "platforms": [
+    "TikTok",
+    "Shorts"
+   ],
+   "length": "10-20 sec",
+   "level": "Beginner",
+   "niches": [
+    "Storytelling",
+    "Education",
+    "Small Business"
+   ],
+   "why": "AI is perfect for answering strange questions that used to need a film budget. One odd idea, treated as completely normal, is easy to understand and easy to share.",
+   "steps": [
+    "Write 10 what-if ideas and pick the funniest or most visual.",
+    "Treat it as normal: no big reaction from the people in the scene.",
+    "Generate 2 or 3 short shots.",
+    "Add a calm, serious voiceover.",
+    "Ask viewers for their own what-if."
+   ],
+   "prompt": "Realistic scene of [ABSURD IDEA] treated as completely normal, documentary camera style, [LOCATION], natural light. No text.",
+   "hooks": [
+    "What if buses had a VIP wing?",
+    "What if your village had a rush hour?"
+   ],
+   "watchOut": "Make it obvious it's imaginary. Never make realistic fake clips about real events, real people or breaking news."
+  },
+  {
+   "id": "cinematic",
+   "emoji": "🎬",
+   "name": "Cinematic mood clips",
+   "platforms": [
+    "Reels",
+    "Shorts"
+   ],
+   "length": "8-20 sec",
+   "level": "Intermediate",
+   "niches": [
+    "Documentary",
+    "Faith-based",
+    "Storytelling"
+   ],
+   "why": "Slow, beautiful camera moves work as stand-alone mood pieces and as B-roll inside longer videos.",
+   "steps": [
+    "Pick a place and a time of day.",
+    "Choose one camera move only, such as a slow push-in.",
+    "Generate 3 variations and keep the best.",
+    "Colour-grade lightly and add ambient sound.",
+    "Use it as an opener or as B-roll in a longer video."
+   ],
+   "prompt": "Slow [CAMERA MOVE, e.g. push-in] through [PLACE] at [TIME OF DAY], [WEATHER], shallow depth of field, natural film grain, realistic. No people's faces. Vertical 9:16.",
+   "hooks": [
+    "Sunrise over the old market.",
+    "A quiet street, 5am."
+   ],
+   "watchOut": "Realistic AI scenes need the platform's AI label. Don't present them as footage of a real event."
+  },
+  {
+   "id": "lofi-loops",
+   "emoji": "🌧️",
+   "name": "Cozy loops",
+   "platforms": [
+    "Shorts",
+    "Reels"
+   ],
+   "length": "15-30 sec",
+   "level": "Beginner",
+   "niches": [
+    "Faith-based",
+    "Education",
+    "Storytelling"
+   ],
+   "why": "A calm, endlessly repeating scene is made to be watched again and again, and people leave it on as background.",
+   "steps": [
+    "Choose a cosy scene: rain at a window, a cat by a lamp, a quiet kitchen.",
+    "Generate a short clip with only slow motion.",
+    "Loop it so the end flows back to the start.",
+    "Add calm sound you have the right to use.",
+    "Give each loop its own theme and title."
+   ],
+   "prompt": "Cozy [SCENE], slow ambient motion, [WEATHER], warm interior light, loopable, no story, soft colour grade. Vertical 9:16.",
+   "hooks": [
+    "Rain on the window. Stay a while.",
+    "Your 30-second reset."
+   ],
+   "watchOut": "Posting dozens of near-identical loops looks mass-produced. Vary the theme and add something personal."
+  },
+  {
+   "id": "explainer",
+   "emoji": "📊",
+   "name": "90-second explainer",
+   "platforms": [
+    "TikTok",
+    "Shorts",
+    "Reels"
+   ],
+   "length": "60-90 sec",
+   "level": "Intermediate",
+   "niches": [
+    "Documentary",
+    "Education",
+    "Small Business"
+   ],
+   "why": "Dense, well-edited explainers get strong saves and shares because people feel smarter after watching.",
+   "steps": [
+    "Pick one question people actually ask.",
+    "Write the script: hook, four facts, one surprising detail each.",
+    "Record or generate the voiceover.",
+    "Add a map, chart or simple graphic every 10 seconds.",
+    "Put your sources in the caption."
+   ],
+   "prompt": "Write a 90-second explainer script about [TOPIC]. Hook in the first 3 seconds, 4 facts with one surprising detail each, a map or chart moment every 10 seconds, and a question at the end. Flag every claim I should verify.",
+   "hooks": [
+    "Why does [CITY] look like this?",
+    "The real reason [THING] costs so much."
+   ],
+   "watchOut": "Fact-check every claim yourself. Name your sources in the caption."
+  },
+  {
+   "id": "music-video",
+   "emoji": "🎵",
+   "name": "Original-song music video",
+   "platforms": [
+    "Shorts",
+    "Reels",
+    "TikTok"
+   ],
+   "length": "20-45 sec",
+   "level": "Intermediate",
+   "niches": [
+    "Children's Content",
+    "Faith-based",
+    "Storytelling"
+   ],
+   "why": "A catchy original hook with matching visuals is shareable, and it's yours, so you own the sound people reuse.",
+   "steps": [
+    "Write a short chorus about one clear idea.",
+    "Make the song with a tool whose licence allows commercial use.",
+    "Write a six-scene visual treatment.",
+    "Generate each scene using the same character description.",
+    "Cut to the beat and post the song as its own sound."
+   ],
+   "prompt": "Write a 30-second visual treatment for a song called [TITLE] in [GENRE] with 6 scenes. For each: what happens, the camera move, and a one-line AI video prompt using this character: [CHARACTER].",
+   "hooks": [
+    "I wrote a song about [IDEA] and made the video myself.",
+    "Sing along: it only has one line."
+   ],
+   "watchOut": "Check the music tool's commercial licence. Don't imitate real artists' voices or use their lyrics."
+  },
+  {
+   "id": "local-skit",
+   "emoji": "🎭",
+   "name": "Local skit animation",
+   "platforms": [
+    "TikTok",
+    "Reels"
+   ],
+   "length": "20-40 sec",
+   "level": "Intermediate",
+   "niches": [
+    "Parenting & Family",
+    "Storytelling",
+    "Small Business"
+   ],
+   "why": "Everyday situations told in your own language and humour travel fast with local audiences, and few creators do them well with AI.",
+   "steps": [
+    "Pick one relatable situation: the bus, the landlord, market bargaining, the family group chat.",
+    "Write setup, escalation and punchline.",
+    "Give two characters distinct looks and voices.",
+    "Animate one scene per line of dialogue.",
+    "Add captions in the language you speak."
+   ],
+   "prompt": "Write a 30-second animated skit in Nigerian Pidgin about [SITUATION]. Two characters: [CHARACTER 1] and [CHARACTER 2]. Setup, escalation, punchline. Keep it playful with no insults about tribes, religion or disability. Then give a one-line video prompt per scene.",
+   "hooks": [
+    "Every family WhatsApp group has this person.",
+    "Market bargaining, but make it a movie."
+   ],
+   "watchOut": "Have a native speaker check the language. Avoid stereotypes and don't imitate real people."
+  },
+  {
+   "id": "absurd-characters",
+   "emoji": "🦈",
+   "name": "Absurd character shorts",
+   "platforms": [
+    "TikTok",
+    "Shorts"
+   ],
+   "length": "10-20 sec",
+   "level": "Intermediate",
+   "niches": [
+    "Storytelling",
+    "Small Business"
+   ],
+   "why": "Silly, over-serious characters are made to be quoted and remixed. It's a crowded fad, so the creators who last give their character a personality and a story.",
+   "steps": [
+    "Invent one character with a name, a flaw and a catchphrase.",
+    "Generate it in the same setting each time.",
+    "Write a 3-line scene where it takes something very seriously.",
+    "Add a voiceover.",
+    "Post a series, not a one-off."
+   ],
+   "prompt": "[IMPROBABLE CREATURE] wearing [FUNNY ACCESSORY], named [MADE-UP NAME], standing in [SETTING], realistic render, extremely serious expression, vertical 9:16.",
+   "hooks": [
+    "Meet [NAME]. He has strong opinions.",
+    "[NAME] explains why Mondays are illegal."
+   ],
+   "watchOut": "A crowded fad. One-off posts rarely build an audience, and templated uploads can be demonetized. Give your character a real story."
+  },
+  {
+   "id": "ugc-demo",
+   "emoji": "📱",
+   "premium": true,
+   "name": "UGC-style product demo",
+   "platforms": [
+    "TikTok",
+    "Reels"
+   ],
+   "length": "15-30 sec",
+   "why": "Product videos that feel like a real person talking to their phone, built for small businesses and affiliates.",
+   "teaser": "Includes the script structure, the visual prompt, the disclosure wording, and a testing plan for 5 versions of one product."
+  },
+  {
+   "id": "series-engine",
+   "emoji": "🔁",
+   "premium": true,
+   "name": "Series engine",
+   "platforms": [
+    "TikTok",
+    "Shorts"
+   ],
+   "length": "Series",
+   "why": "A repeatable system for one character, one world and 30 episodes without losing consistency.",
+   "teaser": "Includes a character bible template, an episode planner, and a batch-production checklist."
+  },
+  {
+   "id": "retention-edit",
+   "emoji": "⏱️",
+   "premium": true,
+   "name": "Retention edit recipe",
+   "platforms": [
+    "TikTok",
+    "Reels",
+    "Shorts"
+   ],
+   "length": "Editing",
+   "why": "A cut-by-cut editing pattern that keeps people watching to the end.",
+   "teaser": "Includes pacing maps, caption styles, and a before/after example of a flat edit and a tight edit."
+  },
+  {
+   "id": "format-calendar",
+   "emoji": "🗓️",
+   "premium": true,
+   "name": "30-day format calendar",
+   "platforms": [
+    "TikTok",
+    "Reels",
+    "Shorts"
+   ],
+   "length": "Plan",
+   "why": "A month of posts that rotates these formats so you never stare at a blank page.",
+   "teaser": "Includes daily prompts, hook choices for each day, and a weekly review sheet."
+  },
+  {
+   "id": "trend-checklist",
+   "emoji": "✅",
+   "premium": true,
+   "name": "Trend adaptation checklist",
+   "platforms": [
+    "TikTok",
+    "Reels",
+    "Shorts"
+   ],
+   "length": "Checklist",
+   "why": "A quick test for whether a trend fits you, and how to make it original instead of a copy.",
+   "teaser": "Includes a 10-question fit test, a rights and safety check, and ways to make any trend your own."
+  }
+ ]
+}

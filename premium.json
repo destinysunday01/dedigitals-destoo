@@ -1,0 +1,246 @@
+{
+ "intro": "Premium material comes with the live class. Browse what's inside each item here. Available means it's ready now. Coming soon means we're still finishing it.",
+ "tabs": [
+  {
+   "id": "packs",
+   "name": "Prompt packs",
+   "items": [
+    {
+     "name": "Fashion editorial portrait pack",
+     "desc": "Face-safe portrait prompts for styled photoshoots.",
+     "includes": [
+      "20 portrait prompts with identity-lock wording",
+      "Lighting, lens and pose variations",
+      "3 colour palettes and outfit ideas",
+      "A short guide to avoiding face drift"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "UGC and ads prompt pack",
+     "desc": "Prompts for product videos and ad scripts that feel natural.",
+     "includes": [
+      "15 UGC-style script prompts",
+      "Visual prompts for each scene",
+      "Disclosure wording for ads",
+      "A testing sheet for 5 versions"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Faith and family visuals pack",
+     "desc": "Calm, respectful visuals for devotionals and family content.",
+     "includes": [
+      "30 scenic and symbolic prompts",
+      "Vertical and square versions",
+      "Text-space layouts",
+      "A style guide for a consistent feed"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Small business content pack",
+     "desc": "A month of ready prompts for local businesses.",
+     "includes": [
+      "25 image prompts",
+      "10 video prompts",
+      "20 caption and WhatsApp status prompts",
+      "Offer and announcement templates"
+     ],
+     "status": "Coming soon"
+    }
+   ]
+  },
+  {
+   "id": "blueprints",
+   "name": "Niche blueprints",
+   "items": [
+    {
+     "name": "Documentary blueprint",
+     "desc": "A complete plan for the documentary niche.",
+     "includes": [
+      "A full 10-video launch plan",
+      "Research and fact-check checklist",
+      "Voiceover and pacing template",
+      "12 tested visual prompt packs"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Storytelling blueprint",
+     "desc": "A complete plan for the storytelling niche.",
+     "includes": [
+      "30-episode series planner",
+      "Character consistency templates",
+      "Hook swipe file of 50 openers",
+      "Pacing maps for 30, 60 and 90 seconds"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Marriage & Relationships blueprint",
+     "desc": "A complete plan for the marriage & relationships niche.",
+     "includes": [
+      "30-day content calendar",
+      "20 scenario script templates",
+      "50 relationship hooks",
+      "Character pack prompts for your couple",
+      "Comment-reply guide for emotional topics"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Children's Content blueprint",
+     "desc": "A complete plan for the children's content niche.",
+     "includes": [
+      "20 original song and lyric templates",
+      "Character bible and prompt pack",
+      "Frame-by-frame safety and review checklist",
+      "Channel setup and audience-setting guide",
+      "Music and licensing guide"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Folktales blueprint",
+     "desc": "A complete plan for the folktales niche.",
+     "includes": [
+      "30 tale outlines with morals",
+      "Storybook visual style pack",
+      "Bilingual narration template",
+      "Source and credit checklist"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Parenting & Family blueprint",
+     "desc": "A complete plan for the parenting & family niche.",
+     "includes": [
+      "30 skit scripts",
+      "Family character pack",
+      "Routine card templates",
+      "Hook swipe file for parents",
+      "Safe-advice wording guide"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Faith-based blueprint",
+     "desc": "A complete plan for the faith-based niche.",
+     "includes": [
+      "30-day devotional series",
+      "Translation and permissions guide",
+      "Calm scripture visual prompt pack",
+      "Guided prayer script templates",
+      "Posting rhythm and community guide"
+     ],
+     "status": "Coming soon"
+    }
+   ]
+  },
+  {
+   "id": "playbooks",
+   "name": "Playbooks",
+   "items": [
+    {
+     "name": "Find your first three clients with content",
+     "desc": "A 14-day plan to turn content into your first paid jobs.",
+     "includes": [
+      "A one-line offer you can explain easily",
+      "A 14-day outreach and posting plan",
+      "Message templates that don't sound pushy",
+      "A tracking sheet"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "30-day content calendar",
+     "desc": "A month of posts that rotates the formats in the Idea Bank.",
+     "includes": [
+      "30 days of post ideas",
+      "A hook choice for each day",
+      "A weekly review sheet"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Retention edit recipe",
+     "desc": "A cut-by-cut pattern that keeps people watching.",
+     "includes": [
+      "Pacing maps",
+      "Caption styles",
+      "A before and after example"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Trend adaptation checklist",
+     "desc": "A quick test for whether a trend fits you.",
+     "includes": [
+      "A 10-question fit test",
+      "A rights and safety check",
+      "Ways to make any trend original"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "UGC-style product demo",
+     "desc": "Product videos that feel like a real person talking to their phone.",
+     "includes": [
+      "Script structure",
+      "Visual prompt",
+      "Disclosure wording",
+      "A testing plan for 5 versions"
+     ],
+     "status": "Coming soon"
+    }
+   ]
+  },
+  {
+   "id": "workflows",
+   "name": "Workflows",
+   "items": [
+    {
+     "name": "Faceless channel batch system",
+     "desc": "Plan, script and produce a week of videos in one sitting.",
+     "includes": [
+      "The full automation map",
+      "The prompt for every step",
+      "A weekly batching schedule"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "One-character consistency workflow",
+     "desc": "Keep the same character across images and video clips.",
+     "includes": [
+      "The reference-sheet method",
+      "The exact edit prompts",
+      "A clip-to-clip checklist"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Voiceover-to-video pipeline",
+     "desc": "Turn a script into a narrated, captioned video fast.",
+     "includes": [
+      "Voice settings",
+      "Pacing templates",
+      "A CapCut caption preset"
+     ],
+     "status": "Coming soon"
+    },
+    {
+     "name": "Series engine",
+     "desc": "One character, one world and 30 episodes without losing consistency.",
+     "includes": [
+      "A character bible template",
+      "An episode planner",
+      "A batch-production checklist"
+     ],
+     "status": "Coming soon"
+    }
+   ]
+  }
+ ]
+}

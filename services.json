@@ -1,0 +1,15 @@
+{
+ "enabled": false,
+ "title": "Work with us",
+ "intro": "Need hands-on help? Here's what we offer.",
+ "note": "Prices are shown in naira and US dollars. Message us on WhatsApp to book.",
+ "items": [
+  {
+   "name": "EXAMPLE: replace with a real service",
+   "desc": "Describe what you really offer in one sentence.",
+   "priceNGN": "₦X",
+   "priceUSD": "$X",
+   "note": "What's included"
+  }
+ ]
+}

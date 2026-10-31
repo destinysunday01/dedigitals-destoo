@@ -1,0 +1,501 @@
+{
+ "updated": "October 2026",
+ "startHere": {
+  "intro": "You don't need ten tools. Start with three free ones: one for video and images, one for ideas and writing, one for editing.",
+  "tools": [
+   {
+    "emoji": "🎬",
+    "name": "Google Flow",
+    "for": "Short AI video clips, with sound, made from a text description.",
+    "free": "Without a paid plan you get 50 Flow credits per day. That covers about five Lite clips or two Fast clips, but not one top-quality clip. Unused daily credits don't carry over.",
+    "paid": "Google AI Pro is about $19.99 a month and includes 1,000 credits.",
+    "tryIsPrompt": true,
+    "try": "An 8-second clip of [SUBJECT] [ACTION] in [PLACE]. Camera: slow push-in. Light: warm evening glow. Sound: soft [AMBIENT SOUND]. No text on screen.",
+    "tip": "One scene per prompt. Short, clear prompts beat long messy ones."
+   },
+   {
+    "emoji": "💬",
+    "name": "ChatGPT",
+    "for": "Brainstorming ideas, writing scripts and captions, and making images.",
+    "free": "Image creation is available on free accounts too, with a small daily allowance (reported at roughly 2 to 3 images a day). Check Settings, then Usage, to see what you have left. OpenAI changes these limits.",
+    "paid": "Paid plans raise the limits. Start free and upgrade only when you keep hitting the cap.",
+    "tryIsPrompt": true,
+    "try": "Give me 10 video ideas about [TOPIC] for complete beginners. For each: a 5-word title, a hook for the first 3 seconds, and what the viewer should feel at the end.",
+    "tip": "Ask for options, then choose and rewrite in your own words."
+   },
+   {
+    "emoji": "✂️",
+    "name": "CapCut",
+    "for": "Cutting clips together, adding captions, music and a voiceover.",
+    "free": "The free plan has the core editing tools. Many fancier effects, templates and AI features are paid or capped.",
+    "paid": "Paid plans are roughly $9.99 (Standard) to $19.99 (Pro) a month, and prices vary by region and where you buy.",
+    "tryIsPrompt": false,
+    "try": "Import 3 clips, trim each to 2 to 3 seconds, add one caption line, add music, then export.",
+    "tip": "Keep your first edit under 15 seconds. Finish one before you try fancy effects."
+   }
+  ],
+  "weekTitle": "Your first week",
+  "week": [
+   "Day 1: Pick one topic and ask ChatGPT for 10 ideas. Choose one.",
+   "Day 2: Write a 30-second script, with the hook first.",
+   "Day 3: Make 3 or 4 clips in Flow.",
+   "Day 4: Edit in CapCut and add music or a voiceover.",
+   "Day 5: Add captions and export.",
+   "Day 6: Post it.",
+   "Day 7: Check which part people watched, write one lesson down, and repeat."
+  ],
+  "rulesTitle": "Two rules from day one",
+  "rules": [
+   "Label realistic AI-made content when the platform asks you to. Switch on the disclosure when you upload.",
+   "Make every video your own. Platforms target mass-produced, templated videos, not AI itself, so add your own ideas, voice and choices."
+  ]
+ },
+ "niches": {
+  "Documentary": {
+   "tagline": "Real stories, told with research and AI visuals.",
+   "what": "Narrated, researched videos about real events, people, places and objects. AI makes the visuals and sometimes the voice. You do the research, the script and the fact-checking.",
+   "formats": [
+    "Mini-doc (60 to 90 seconds): one surprising true story, told fast, for Shorts, Reels and TikTok.",
+    "Explainer doc (6 to 10 minutes): how something started, grew and changed, for YouTube.",
+    "Timeline: how [thing] changed from [year] to today.",
+    "Hidden history: unsolved, forgotten or misunderstood stories.",
+    "Local angle: stories from your own country, city or industry. These are underserved, so competition is lower."
+   ],
+   "workflow": "Pick a topic with a real angle, read at least 3 reliable sources, write the script yourself (let ChatGPT help with the outline only), add a voiceover, make visuals in Flow and ChatGPT, edit in CapCut, fact-check, then label the AI visuals.",
+   "prompts": [
+    {
+     "title": "Research outline",
+     "text": "Act as a documentary researcher. Topic: [TOPIC]. Give me: 1) the most surprising true fact to open with, 2) a 5-part outline, 3) 3 claims I must verify before publishing, and 4) the questions viewers will ask."
+    },
+    {
+     "title": "Script to shot list",
+     "text": "Turn this script into a shot list of 8 scenes. For each: what is on screen, the camera move, and a one-line prompt for an AI video tool. Style: [STYLE, e.g. clean documentary, muted colours]. Script: [PASTE SCRIPT]"
+    }
+   ],
+   "rules": [
+    "Don't present fabricated events or AI-made clips as real footage. Make it obvious which visuals are recreations, and use the platform's AI label.",
+    "Faceless documentary channels have reported monetization being paused when their output looked mass-produced. Original research and a distinct voice are your protection."
+   ],
+   "ideas": [
+    "How an everyday object was invented",
+    "The rise and fall of a famous local market or brand",
+    "Why your city looks the way it does",
+    "5 inventions that changed your country",
+    "The timeline of one technology"
+   ],
+   "locked": [
+    "A full 10-video launch plan",
+    "Research and fact-check checklist",
+    "Voiceover and pacing template",
+    "12 tested visual prompt packs"
+   ]
+  },
+  "Storytelling": {
+   "tagline": "Cliffhanger shorts, moral tales and mini-series.",
+   "what": "Narrated or animated stories: original fiction, retold true stories, moral tales, or a mini-series with a recurring character.",
+   "formats": [
+    "Cliffhanger shorts: 60 seconds, Part 1, 2, 3, so people follow for the next one.",
+    "Animated moral or bedtime stories: calm pacing, one clear lesson.",
+    "True-story retellings: from your own research or public-domain sources.",
+    "Character mini-series: one recurring character across episodes.",
+    "What-if micro-stories: one strange idea told in under 45 seconds."
+   ],
+   "workflow": "The hard part is consistency. Write a character sheet (age, clothes, face, colours) and paste the same description into every prompt. Reuse one reference image wherever the tool allows it.",
+   "prompts": [
+    {
+     "title": "Character sheet",
+     "text": "Create a character sheet for [CHARACTER NAME]: age, face shape, hair, clothes, colour palette, 3 personality traits, and one visual detail that never changes. Keep it under 120 words so I can paste it into every prompt."
+    },
+    {
+     "title": "60-second story",
+     "text": "Write a 60-second story for a vertical video. Hook in the first 2 seconds. 6 short scenes. End on a question or cliffhanger. Theme: [THEME]. Tone: [TONE]. Then give each scene a one-line AI video prompt using this character: [PASTE CHARACTER SHEET]."
+    }
+   ],
+   "rules": [
+    "Write or heavily rework your own stories. Don't copy other creators' scripts.",
+    "Templated, repetitive uploads with no original input are what YouTube demonetizes. Change the structure, the voice and the endings from episode to episode."
+   ],
+   "ideas": [
+    "A lost phone that shows tomorrow's messages",
+    "A market seller who never ages",
+    "A child who understands animals",
+    "A village rumour that turns out to be true",
+    "A letter that arrives 20 years late"
+   ],
+   "locked": [
+    "30-episode series planner",
+    "Character consistency templates",
+    "Hook swipe file of 50 openers",
+    "Pacing maps for 30, 60 and 90 seconds"
+   ]
+  },
+  "Marriage & Relationships": {
+   "tagline": "Warm, practical advice people save and share.",
+   "what": "General-interest short videos about communication, dating, marriage habits and everyday relationship patterns, told through scenarios, animated stories or narrated tips. This is relationship insight, not therapy or counselling.",
+   "formats": [
+    "Scenario stories: a short micro-drama showing a common misunderstanding, then a better way.",
+    "Red flag and green flag lists: 5 signs, one line each.",
+    "Say this instead of that: real sentences people can use tonight.",
+    "Marriage habits: weekly check-ins, money talks, handling in-laws and family expectations.",
+    "Conversation starters: questions for couples, dating pairs and long-distance partners."
+   ],
+   "workflow": "Pick one lane (dating, newly married, long-distance, in-laws) and stay in it. Write from real everyday patterns, not stereotypes. Keep scripts under 150 words, use a warm voice with captions, and keep your two characters looking the same in every video.",
+   "prompts": [
+    {
+     "title": "Scenario script",
+     "text": "Write a 45-second script about this situation: [SITUATION, e.g. one partner always forgets to reply]. Show both people's feelings fairly, no blame. Structure: hook, what happened, why it hurts, one better way to say it. Warm tone, simple words."
+    },
+    {
+     "title": "Say this instead",
+     "text": "Give me 7 'say this instead of that' pairs for couples dealing with [TOPIC, e.g. money, chores, in-laws]. Each pair: the harsh version, the kind version, and one sentence on why it works."
+    },
+    {
+     "title": "Consistent couple visuals",
+     "text": "Illustrated style, warm colours, soft lighting. Two characters: [NAME 1], [DESCRIPTION: age, hair, clothes] and [NAME 2], [DESCRIPTION]. Scene: [SCENE]. Keep both faces and outfits identical to previous scenes. No text in the image."
+    }
+   ],
+   "rules": [
+    "Present it as general insight, not therapy. Don't diagnose people or claim to be a counsellor.",
+    "YouTube doesn't allow monetizing AI personas presented as human experts giving advice on health, finance, legal or political topics, and relationship advice can touch mental health. Be open that the narrator is not a professional.",
+    "For topics like abuse or control, add a line telling viewers to contact local support services. Avoid shaming, stereotypes and gender-war bait."
+   ],
+   "ideas": [
+    "5 green flags people overlook",
+    "What to say when you're too angry to talk",
+    "A weekly 10-minute marriage check-in",
+    "Money talks every couple avoids",
+    "Long-distance rules that actually work"
+   ],
+   "locked": [
+    "30-day content calendar",
+    "20 scenario script templates",
+    "50 relationship hooks",
+    "Character pack prompts for your couple",
+    "Comment-reply guide for emotional topics"
+   ]
+  },
+  "Children's Content": {
+   "tagline": "Gentle songs, bedtime stories and cute baby clips, made safely.",
+   "what": "Christian nursery rhymes, learning songs, bedtime Bible stories, dancing baby clips and comedy clips where a baby talks like an adult. There are two audiences: children (the strictest rules) and adults who enjoy cute baby humour. Know which one you are making for.",
+   "formats": [
+    "Christian nursery rhymes and worship songs for kids: original lyrics or public-domain hymns.",
+    "Learning songs: ABC, counting 1 to 10, colours, books of the Bible.",
+    "Bedtime Bible stories: calm narration, 3 to 5 minutes, one gentle lesson.",
+    "Dancing baby clips: clearly stylised cartoon or 3D babies dancing to original beats.",
+    "Baby talks like an adult: short comedy clips for adult audiences, clearly stylised and labelled as AI."
+   ],
+   "workflow": "Write original lyrics or a story, make or license the music, create stylised visuals with one consistent character, then review every frame yourself for scary images and glitches. Label AI content and set the audience option correctly before you upload.",
+   "prompts": [
+    {
+     "title": "Original nursery rhyme",
+     "text": "Write an original 4-verse nursery rhyme for ages 2 to 4 about [TOPIC, e.g. counting animals, God made everything]. Simple words, a bouncy rhythm, a repeating chorus. Do not copy or closely imitate any existing song."
+    },
+    {
+     "title": "Stylised baby character",
+     "text": "A cute stylised 3D cartoon baby, [HAIR], wearing [OUTFIT], big friendly eyes, soft pastel background, gentle studio lighting. Clearly animated, not photorealistic. Same character design in every shot. No text."
+    },
+    {
+     "title": "Calm bedtime story",
+     "text": "Write a 3-minute bedtime story for ages 3 to 5 about [BIBLE STORY OR VALUE]. Gentle tone, nothing scary, short sentences, a repeating line children can say along, and a peaceful ending."
+    }
+   ],
+   "rules": [
+    "This is the strictest niche. YouTube can suspend monetization for mass-produced, auto-generated kids videos, and in April 2026 more than 200 organisations urged YouTube to ban AI videos from its Kids app. Make fewer, better, human-reviewed videos.",
+    "Set the audience correctly. Nursery rhymes and animated characters are safest labelled Made for Kids. Keep scary or mature themes out completely.",
+    "Realistic AI babies must be labelled as AI. Keep them stylised, never use real children's photos or voices without a parent's consent, and never create anything sexualised or unsafe involving children.",
+    "Don't use famous cartoon characters or fake official-looking titles, and don't claim educational benefits you can't support.",
+    "Modern worship songs and many arrangements are copyrighted. Use original songs or true public-domain hymns."
+   ],
+   "ideas": [
+    "Counting 1 to 10 with a happy lion (original song)",
+    "The Good Shepherd: a bedtime story",
+    "Cartoon baby dancing to an original Afrobeat-style beat",
+    "Cartoon baby orders breakfast like a boss",
+    "Alphabet animals of Africa"
+   ],
+   "locked": [
+    "20 original song and lyric templates",
+    "Character bible and prompt pack",
+    "Frame-by-frame safety and review checklist",
+    "Channel setup and audience-setting guide",
+    "Music and licensing guide"
+   ]
+  },
+    "Folktales": {
+   "tagline": "Retell classic tales with fresh AI visuals.",
+   "what": "Animated or illustrated retellings of traditional stories: trickster animals, origin tales, village fables and tales with a moral. The big opportunity is telling them in your own voice, and in your own language as well as English.",
+   "formats": [
+    "Moonlight story (3 to 5 minutes): calm narration over storybook-style illustrations.",
+    "Tale plus moral: retell the story in 60 seconds, then say what it teaches.",
+    "Origin tales: why the sky is high, why the tortoise's shell is cracked, how the river got its name.",
+    "Bilingual retelling: the same tale in English and in Yoruba, Igbo, Hausa, Pidgin or another local language.",
+    "Village mini-series: the same village and characters across many short episodes."
+   ],
+   "workflow": "Read the tale from several sources, close them, then write it in your own words. Decide the moral, create a consistent storybook look, make 6 to 8 illustrations, add warm narration and soft music, and credit where the story comes from.",
+   "prompts": [
+    {
+     "title": "Retell in your own words",
+     "text": "Retell the folktale about [TALE OR CHARACTER] as a 60-second story for a general audience. Use your own words and a fresh opening. Keep the heart of the story and its moral: [MORAL]. Simple language, vivid sensory detail, a satisfying ending."
+    },
+    {
+     "title": "Storybook visual style",
+     "text": "Warm storybook illustration, earth tones, hand-painted texture, gentle lighting. Scene: [SCENE]. Characters: [CHARACTER DESCRIPTIONS]. Respectful, authentic clothing and setting from [CULTURE OR REGION]. Same character designs in every image. No text."
+    },
+    {
+     "title": "Bilingual version",
+     "text": "Here is my story in English: [PASTE STORY]. Translate it into [LANGUAGE] in a natural storytelling voice, not word for word. List any phrases you are unsure about so a native speaker can check them."
+    }
+   ],
+   "rules": [
+    "Traditional tales are open for everyone to retell, but a specific book, translation, recording or illustration belongs to its creator. Retell from several sources in your own words and never copy someone's text.",
+    "Credit the culture or region the tale comes from. Skip stories that are sacred or ritual unless you have real knowledge and respect for them.",
+    "Have a native speaker check any local-language narration. AI translation of proverbs and idioms is often wrong.",
+    "Avoid stereotypes in costume, faces and settings. If the audience is children, follow the kids' content rules too."
+   ],
+   "ideas": [
+    "How the tortoise got its cracked shell",
+    "The talking drum that told the truth",
+    "Why the sun and the moon live in the sky",
+    "The greedy king and the honest farmer",
+    "The village that shared one pot"
+   ],
+   "locked": [
+    "30 tale outlines with morals",
+    "Storybook visual style pack",
+    "Bilingual narration template",
+    "Source and credit checklist"
+   ]
+  },
+  "Parenting & Family": {
+   "tagline": "Everyday tips and relatable family moments.",
+   "what": "Short, warm videos about family life: relatable skits, simple parenting tips, routines, big-family dynamics and kitchen-table conversations. This is everyday encouragement, not medical or psychological advice.",
+   "formats": [
+    "Relatable skits: animated parents, kids and grandparents in everyday moments.",
+    "5-tip lists: calmer mornings, homework time, screen limits, sharing chores.",
+    "Routine cards: a simple morning or bedtime routine families can copy.",
+    "Family communication: how to talk after a bad day, how to apologise to a child.",
+    "Big-family life: extended family, school runs, shared money and household rules."
+   ],
+   "workflow": "Pick one stage (toddlers, school age, teens) and one problem per video. Write the tip in plain words, show it as a short skit or list with stylised characters, and end with one thing a parent can try tonight.",
+   "prompts": [
+    {
+     "title": "Skit script",
+     "text": "Write a 40-second family skit about [SITUATION, e.g. children arguing over the TV remote]. Characters: [PARENT], [CHILD 1], [CHILD 2]. Show the problem, a calm response from the parent, and a small win at the end. Warm humour, no mocking of the children."
+    },
+    {
+     "title": "5-tip list",
+     "text": "Give me 5 practical tips for parents dealing with [PROBLEM, e.g. bedtime battles] with children aged [AGE]. Each tip: one short sentence plus one example sentence a parent could say. Gentle tone, no medical claims."
+    },
+    {
+     "title": "Family characters",
+     "text": "Friendly 2D animated family: [MOTHER DESCRIPTION], [FATHER DESCRIPTION], [CHILD DESCRIPTION]. Warm home setting, soft colours. Scene: [SCENE]. Keep the same faces and outfits in every scene. No text."
+    }
+   ],
+   "rules": [
+    "Share general tips, not medical, psychological or legal advice. If a topic touches health or safety, say so and tell parents to talk to a doctor or qualified professional.",
+    "Don't use real children's photos, names or voices, yours or anyone else's. Use stylised characters.",
+    "Never shame or mock children, even as a joke. Parents reading and watching notice.",
+    "If the video is aimed at children rather than parents, follow the Children's Content rules."
+   ],
+   "ideas": [
+    "A 3-step calm-down routine for loud mornings",
+    "What to say instead of 'stop crying'",
+    "A weekly family meeting that takes 10 minutes",
+    "Chores that fit each age",
+    "Why extended family advice feels heavy, and how to handle it kindly"
+   ],
+   "locked": [
+    "30 skit scripts",
+    "Family character pack",
+    "Routine card templates",
+    "Hook swipe file for parents",
+    "Safe-advice wording guide"
+   ]
+  },
+  "Faith-based": {
+   "tagline": "Daily encouragement, scripture visuals, calm narration.",
+   "what": "Short, calm videos built around scripture and prayer: a verse with a gentle reflection, guided prayers, Bible story retellings and encouragement for everyday life. Trust matters most in this niche, so honesty and respect come first.",
+   "formats": [
+    "Daily verse (30 to 45 seconds): one verse, one reflection, one prayer line.",
+    "Guided prayer: slow narration over calm visuals for morning, night or exam season.",
+    "Bible story retelling: a story told in simple modern language.",
+    "Faith and everyday life: work, money, patience, friendship, handling stress.",
+    "Scripture and scenery: verse text over calm landscapes, with your own reflection added."
+   ],
+   "workflow": "Choose the verse and the translation first. Write a short reflection in your own words, record a steady voiceover, use calm visuals, add soft instrumental music you have the right to use, and put the translation name on screen or in the caption.",
+   "prompts": [
+    {
+     "title": "Daily devotional script",
+     "text": "Write a 40-second devotional script for the verse [VERSE REFERENCE] using the [TRANSLATION] text I paste here: [PASTE VERSE]. Structure: a one-line hook about a real struggle, the verse, a two-sentence reflection in plain words, and a one-line prayer. Warm, humble tone. Do not promise healing, wealth or guaranteed outcomes."
+    },
+    {
+     "title": "Guided prayer",
+     "text": "Write a 60-second guided prayer for [SITUATION, e.g. someone anxious before an exam]. Slow pace, short sentences, gentle language, and pauses marked with [PAUSE]. No promises about specific results."
+    },
+    {
+     "title": "Scripture visuals",
+     "text": "A calm [SCENE, e.g. sunrise over hills, still water, an open Bible on a wooden table], soft golden light, peaceful mood, cinematic, no people's faces, no text. Vertical 9:16."
+    }
+   ],
+   "rules": [
+    "Bible translations are not all free to use. The King James Version is public domain outside the UK, and the World English Bible is public domain. The NIV and ESV let you quote up to 500 verses with credit, within limits. Name the translation you use.",
+    "Never invent testimonies, miracles or healing stories, and never promise money, healing or breakthroughs. People in this niche are often vulnerable.",
+    "Be honest that your narrator is an AI voice if it is one. Don't present an AI voice as a real pastor, prophet or counsellor.",
+    "Many viewers are sensitive about how Jesus and other holy figures are shown. Symbolic visuals such as light, landscapes, hands and open scrolls are the safer choice.",
+    "Use music you have the right to use. Many worship songs are copyrighted."
+   ],
+   "ideas": [
+    "A verse for the day you feel behind",
+    "A 60-second prayer before an exam",
+    "Psalm 23 in simple modern words",
+    "What patience looks like at work",
+    "A short bedtime prayer for the whole family"
+   ],
+   "locked": [
+    "30-day devotional series",
+    "Translation and permissions guide",
+    "Calm scripture visual prompt pack",
+    "Guided prayer script templates",
+    "Posting rhythm and community guide"
+   ]
+  },
+    "Folktales": {
+   "tagline": "Retell classic tales with fresh AI visuals.",
+   "what": "Animated or illustrated retellings of traditional stories: trickster animals, origin tales, village fables and tales with a moral. The big opportunity is telling them in your own voice, and in your own language as well as English.",
+   "formats": [
+    "Moonlight story (3 to 5 minutes): calm narration over storybook-style illustrations.",
+    "Tale plus moral: retell the story in 60 seconds, then say what it teaches.",
+    "Origin tales: why the sky is high, why the tortoise's shell is cracked, how the river got its name.",
+    "Bilingual retelling: the same tale in English and in Yoruba, Igbo, Hausa, Pidgin or another local language.",
+    "Village mini-series: the same village and characters across many short episodes."
+   ],
+   "workflow": "Read the tale from several sources, close them, then write it in your own words. Decide the moral, create a consistent storybook look, make 6 to 8 illustrations, add warm narration and soft music, and credit where the story comes from.",
+   "prompts": [
+    {
+     "title": "Retell in your own words",
+     "text": "Retell the folktale about [TALE OR CHARACTER] as a 60-second story for a general audience. Use your own words and a fresh opening. Keep the heart of the story and its moral: [MORAL]. Simple language, vivid sensory detail, a satisfying ending."
+    },
+    {
+     "title": "Storybook visual style",
+     "text": "Warm storybook illustration, earth tones, hand-painted texture, gentle lighting. Scene: [SCENE]. Characters: [CHARACTER DESCRIPTIONS]. Respectful, authentic clothing and setting from [CULTURE OR REGION]. Same character designs in every image. No text."
+    },
+    {
+     "title": "Bilingual version",
+     "text": "Here is my story in English: [PASTE STORY]. Translate it into [LANGUAGE] in a natural storytelling voice, not word for word. List any phrases you are unsure about so a native speaker can check them."
+    }
+   ],
+   "rules": [
+    "Traditional tales are open for everyone to retell, but a specific book, translation, recording or illustration belongs to its creator. Retell from several sources in your own words and never copy someone's text.",
+    "Credit the culture or region the tale comes from. Skip stories that are sacred or ritual unless you have real knowledge and respect for them.",
+    "Have a native speaker check any local-language narration. AI translation of proverbs and idioms is often wrong.",
+    "Avoid stereotypes in costume, faces and settings. If the audience is children, follow the kids' content rules too."
+   ],
+   "ideas": [
+    "How the tortoise got its cracked shell",
+    "The talking drum that told the truth",
+    "Why the sun and the moon live in the sky",
+    "The greedy king and the honest farmer",
+    "The village that shared one pot"
+   ],
+   "locked": [
+    "30 tale outlines with morals",
+    "Storybook visual style pack",
+    "Bilingual narration template",
+    "Source and credit checklist"
+   ]
+  },
+  "Parenting & Family": {
+   "tagline": "Everyday tips and relatable family moments.",
+   "what": "Short, warm videos about family life: relatable skits, simple parenting tips, routines, big-family dynamics and kitchen-table conversations. This is everyday encouragement, not medical or psychological advice.",
+   "formats": [
+    "Relatable skits: animated parents, kids and grandparents in everyday moments.",
+    "5-tip lists: calmer mornings, homework time, screen limits, sharing chores.",
+    "Routine cards: a simple morning or bedtime routine families can copy.",
+    "Family communication: how to talk after a bad day, how to apologise to a child.",
+    "Big-family life: extended family, school runs, shared money and household rules."
+   ],
+   "workflow": "Pick one stage (toddlers, school age, teens) and one problem per video. Write the tip in plain words, show it as a short skit or list with stylised characters, and end with one thing a parent can try tonight.",
+   "prompts": [
+    {
+     "title": "Skit script",
+     "text": "Write a 40-second family skit about [SITUATION, e.g. children arguing over the TV remote]. Characters: [PARENT], [CHILD 1], [CHILD 2]. Show the problem, a calm response from the parent, and a small win at the end. Warm humour, no mocking of the children."
+    },
+    {
+     "title": "5-tip list",
+     "text": "Give me 5 practical tips for parents dealing with [PROBLEM, e.g. bedtime battles] with children aged [AGE]. Each tip: one short sentence plus one example sentence a parent could say. Gentle tone, no medical claims."
+    },
+    {
+     "title": "Family characters",
+     "text": "Friendly 2D animated family: [MOTHER DESCRIPTION], [FATHER DESCRIPTION], [CHILD DESCRIPTION]. Warm home setting, soft colours. Scene: [SCENE]. Keep the same faces and outfits in every scene. No text."
+    }
+   ],
+   "rules": [
+    "Share general tips, not medical, psychological or legal advice. If a topic touches health or safety, say so and tell parents to talk to a doctor or qualified professional.",
+    "Don't use real children's photos, names or voices, yours or anyone else's. Use stylised characters.",
+    "Never shame or mock children, even as a joke. Parents reading and watching notice.",
+    "If the video is aimed at children rather than parents, follow the Children's Content rules."
+   ],
+   "ideas": [
+    "A 3-step calm-down routine for loud mornings",
+    "What to say instead of 'stop crying'",
+    "A weekly family meeting that takes 10 minutes",
+    "Chores that fit each age",
+    "Why extended family advice feels heavy, and how to handle it kindly"
+   ],
+   "locked": [
+    "30 skit scripts",
+    "Family character pack",
+    "Routine card templates",
+    "Hook swipe file for parents",
+    "Safe-advice wording guide"
+   ]
+  },
+  "Faith-based": {
+   "tagline": "Daily encouragement, scripture visuals, calm narration.",
+   "what": "Short, calm videos built around scripture and prayer: a verse with a gentle reflection, guided prayers, Bible story retellings and encouragement for everyday life. Trust matters most in this niche, so honesty and respect come first.",
+   "formats": [
+    "Daily verse (30 to 45 seconds): one verse, one reflection, one prayer line.",
+    "Guided prayer: slow narration over calm visuals for morning, night or exam season.",
+    "Bible story retelling: a story told in simple modern language.",
+    "Faith and everyday life: work, money, patience, friendship, handling stress.",
+    "Scripture and scenery: verse text over calm landscapes, with your own reflection added."
+   ],
+   "workflow": "Choose the verse and the translation first. Write a short reflection in your own words, record a steady voiceover, use calm visuals, add soft instrumental music you have the right to use, and put the translation name on screen or in the caption.",
+   "prompts": [
+    {
+     "title": "Daily devotional script",
+     "text": "Write a 40-second devotional script for the verse [VERSE REFERENCE] using the [TRANSLATION] text I paste here: [PASTE VERSE]. Structure: a one-line hook about a real struggle, the verse, a two-sentence reflection in plain words, and a one-line prayer. Warm, humble tone. Do not promise healing, wealth or guaranteed outcomes."
+    },
+    {
+     "title": "Guided prayer",
+     "text": "Write a 60-second guided prayer for [SITUATION, e.g. someone anxious before an exam]. Slow pace, short sentences, gentle language, and pauses marked with [PAUSE]. No promises about specific results."
+    },
+    {
+     "title": "Scripture visuals",
+     "text": "A calm [SCENE, e.g. sunrise over hills, still water, an open Bible on a wooden table], soft golden light, peaceful mood, cinematic, no people's faces, no text. Vertical 9:16."
+    }
+   ],
+   "rules": [
+    "Bible translations are not all free to use. The King James Version is public domain outside the UK, and the World English Bible is public domain. The NIV and ESV let you quote up to 500 verses with credit, within limits. Name the translation you use.",
+    "Never invent testimonies, miracles or healing stories, and never promise money, healing or breakthroughs. People in this niche are often vulnerable.",
+    "Be honest that your narrator is an AI voice if it is one. Don't present an AI voice as a real pastor, prophet or counsellor.",
+    "Many viewers are sensitive about how Jesus and other holy figures are shown. Symbolic visuals such as light, landscapes, hands and open scrolls are the safer choice.",
+    "Use music you have the right to use. Many worship songs are copyrighted."
+   ],
+   "ideas": [
+    "A verse for the day you feel behind",
+    "A 60-second prayer before an exam",
+    "Psalm 23 in simple modern words",
+    "What patience looks like at work",
+    "A short bedtime prayer for the whole family"
+   ],
+   "locked": [
+    "30-day devotional series",
+    "Translation and permissions guide",
+    "Calm scripture visual prompt pack",
+    "Guided prayer script templates",
+    "Posting rhythm and community guide"
+   ]
+  }
+ }
+}

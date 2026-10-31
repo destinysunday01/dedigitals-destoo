@@ -288,6 +288,164 @@
     font-size:13px;color:var(--muted)}
   .foot a:hover{color:var(--copper)}
 
+  /* ---------- feed & vault ---------- */
+  #feed .sec-head,#vault .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+  .feed-shell{max-width:760px;margin:0 auto}
+  .feed-bar{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .feed-bar .filters,#feedKinds,#vaultKinds{margin-bottom:14px}
+  .feed-search{flex:1;min-width:200px;max-width:320px;padding:10px 18px;border-radius:999px;
+    border:1px solid var(--line);background:rgba(0,0,0,.25);color:var(--ivory);
+    font:400 13px 'Inter',sans-serif;outline:none;transition:.2s;margin-bottom:14px}
+  .feed-search:focus{border-color:rgba(198,161,91,.6)}
+  .feed-search::placeholder{color:#6E7772}
+  .feed-meta{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:4px 0 18px}
+  .feed{display:flex;flex-direction:column;gap:18px}
+  .feed-card pre{max-height:220px}
+  .feed-card pre.open{max-height:none}
+  .feed-card pre a,.vault-card p a{color:var(--copper);text-decoration:underline;text-underline-offset:3px}
+  .feed-card.locked{padding-bottom:92px}
+  .feed-card.locked pre{max-height:120px;overflow:hidden}
+  .fcopy{flex:1;padding:11px;border-radius:10px;border:1px solid var(--line);background:transparent;
+    color:var(--ivory);font-size:13px;cursor:pointer;transition:.2s;font-family:'Inter',sans-serif}
+  .fcopy:hover{background:var(--bronze);color:#0C1013;border-color:var(--bronze)}
+  .fcopy.done{background:#2E4A3A;color:#BFE0C9;border-color:#2E4A3A}
+  .fexpand{padding:11px 16px;border-radius:10px;border:1px solid var(--line);background:transparent;
+    color:var(--muted);font-size:13px;cursor:pointer;transition:.2s;font-family:'Inter',sans-serif}
+  .fexpand:hover{color:var(--copper);border-color:rgba(198,161,91,.5)}
+  .feed-more{text-align:center;margin-top:28px}
+  .feed-empty{color:var(--muted);text-align:center;padding:40px 0;font-weight:300}
+  .vault-note{max-width:620px;margin:0 auto 26px;text-align:center;font-size:12.5px;color:#6E7772}
+  #vaultKinds{justify-content:center}
+  .vault-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .vault-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;display:flex;flex-direction:column;transition:.3s}
+  .vault-card:hover{border-color:rgba(198,161,91,.45);transform:translateY(-3px)}
+  .vault-card .tags{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .vault-card h3{font-size:18px;margin-bottom:8px}
+  .vault-card p{font-size:13.5px;color:var(--muted);font-weight:300;margin-bottom:16px}
+  .vault-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+  .vault-actions .fcopy,.vault-actions .vlink{flex:0 1 auto;padding:9px 14px;font-size:12.5px}
+  .vlink{border-radius:10px;border:1px solid rgba(198,161,91,.35);color:var(--bronze);cursor:pointer;
+    transition:.2s;font-family:'Inter',sans-serif;display:inline-block;text-align:center}
+  .vlink:hover{background:var(--bronze);color:#0C1013}
+
+  /* ---------- start here & niche guides ---------- */
+  #start .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+  .start-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:16px}
+  .tool-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px;display:flex;flex-direction:column;transition:.3s}
+  .tool-card:hover{border-color:rgba(198,161,91,.45);transform:translateY(-3px)}
+  .tool-card .emoji{font-size:24px;margin-bottom:10px}
+  .tool-card h3{font-size:21px;margin-bottom:6px}
+  .tool-card .lbl{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);margin:14px 0 6px}
+  .tool-card p{font-size:13.5px;color:var(--muted);font-weight:300;line-height:1.65}
+  .tool-card pre,.g-prompt pre{background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:10px;
+    padding:14px;font-family:'Inter',monospace;font-size:12.5px;line-height:1.65;color:#C9D1CB;
+    white-space:pre-wrap;word-break:break-word;margin-bottom:10px}
+  .tool-card pre b,.g-prompt pre b{color:var(--copper);font-weight:500}
+  .tool-card .tip{margin-top:12px;font-size:12.5px;color:#8A948E}
+  .gcopy{padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:transparent;
+    color:var(--ivory);font-size:13px;cursor:pointer;transition:.2s;font-family:'Inter',sans-serif}
+  .gcopy:hover{background:var(--bronze);color:#0C1013;border-color:var(--bronze)}
+  .gcopy.done{background:#2E4A3A;color:#BFE0C9;border-color:#2E4A3A}
+  .start-extra{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .extra-card{background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);border:1px solid var(--line);
+    border-radius:var(--radius);padding:26px}
+  .extra-card h3{font-size:19px;margin-bottom:12px}
+  .extra-card ul{list-style:none;padding:0;margin:0}
+  .extra-card li{font-size:13.5px;color:var(--muted);font-weight:300;line-height:1.6;padding:7px 0;border-bottom:1px solid var(--line)}
+  .extra-card li:last-child{border-bottom:0}
+  .start-note{text-align:center;font-size:12.5px;color:#6E7772;margin-top:18px}
+  .niche a.more{cursor:pointer}
+  body.noscroll{overflow:hidden}
+  .gmodal{position:fixed;inset:0;z-index:90;display:none;justify-content:center;align-items:flex-start;
+    background:rgba(6,9,11,.8);backdrop-filter:blur(6px);overflow-y:auto;padding:40px 16px}
+  .gmodal.open{display:flex}
+  .gpanel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    max-width:760px;width:100%;padding:34px;position:relative;margin-bottom:40px}
+  .gclose{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;
+    border:1px solid var(--line);background:transparent;color:var(--ivory);font-size:18px;cursor:pointer}
+  .gclose:hover{border-color:var(--bronze);color:var(--bronze)}
+  .gpanel h2{font-size:30px;margin-bottom:6px;padding-right:40px}
+  .gpanel .g-tag{color:var(--copper);font-size:14px;margin-bottom:18px}
+  .gpanel h4{font-family:'Inter',sans-serif;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--bronze);margin:24px 0 8px;font-weight:500}
+  .gpanel p,.gpanel li{font-size:14px;color:#C9D1CB;font-weight:300;line-height:1.7}
+  .gpanel ul{margin:0;padding-left:18px}
+  .gpanel li{margin-bottom:6px}
+  .g-prompt{margin-bottom:14px}
+  .g-ptitle{font-size:13px;color:var(--ivory);margin-bottom:6px}
+  .g-locked{margin-top:26px;padding:22px;border:1px dashed rgba(198,161,91,.45);border-radius:var(--radius);
+    background:rgba(198,161,91,.05)}
+  .g-locked h4{margin-top:10px}
+  .g-locked .btn{margin-top:14px}
+    /* ---------- idea bank ---------- */
+  #bank .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+  .bank-tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:26px}
+  .tip-pill{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;
+    padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+  .tip-pill b{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);font-weight:500}
+  .tip-pill span{font-size:13px;color:var(--muted);font-weight:300;line-height:1.55}
+  #bankLevels{justify-content:center;margin-bottom:18px}
+  .bank-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-bottom:56px}
+  .format-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;display:flex;flex-direction:column;cursor:pointer;transition:.3s}
+  .format-card:hover,.format-card:focus-visible{border-color:rgba(198,161,91,.5);transform:translateY(-3px);outline:none}
+  .format-card .emoji{font-size:24px;margin-bottom:8px}
+  .format-card h3{font-size:19px;margin-bottom:10px;padding-right:70px}
+  .format-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .format-card p{font-size:13.5px;color:var(--muted);font-weight:300;line-height:1.6;margin-bottom:14px}
+  .format-card .more{margin-top:auto;font-size:13px;color:var(--bronze)}
+  .hook-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:24px}
+  .hook-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .hook-name{font-size:13px;color:var(--ivory);margin-bottom:8px}
+  .hook-item pre{background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:10px;padding:14px;
+    font-family:'Inter',monospace;font-size:12.5px;line-height:1.65;color:#C9D1CB;
+    white-space:pre-wrap;word-break:break-word;margin-bottom:10px}
+  .hook-item pre b{color:var(--copper);font-weight:500}
+  .gpanel ol{margin:0;padding-left:20px}
+  .g-warn{margin-top:20px;padding:14px 16px;border-left:3px solid var(--bronze);background:rgba(198,161,91,.06);
+    border-radius:0 10px 10px 0;font-size:13.5px;color:#C9D1CB;line-height:1.6}
+    /* ---------- tools directory ---------- */
+  #tools .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+  #toolCats{justify-content:center;margin-bottom:18px}
+  .dir-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:56px}
+  .dir-grid .tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 12px}
+  .dir-grid .tool-card h3{margin-bottom:4px}
+  .tag.earn-yes{background:#2E4A3A;border-color:#2E4A3A;color:#BFE0C9}
+  .tag.earn-no{background:#4A2E2A;border-color:#4A2E2A;color:#E8BDB5}
+  .lic-intro{max-width:640px;margin:0 auto 18px;text-align:center;font-size:13.5px;color:var(--muted);font-weight:300}
+  .lic-box{max-width:760px;margin:0 auto 56px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .lic-row{display:flex;gap:14px;align-items:flex-start;padding:14px 18px;border-bottom:1px solid var(--line)}
+  .lic-row:last-child{border-bottom:0}
+  .lic-row b{min-width:170px;font-size:13.5px;color:var(--ivory);font-weight:500}
+  .lic-row span{font-size:13px;color:var(--muted);font-weight:300;line-height:1.55}
+  .lic-row .tag{flex:none}
+  .retired-note{max-width:760px;margin:-34px auto 56px;font-size:12.5px;color:#8A948E;text-align:center;line-height:1.6}
+  .stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:56px}
+  .stack-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .stack-card h3{font-size:20px;margin-bottom:4px}
+  .stack-card .price{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze);margin-bottom:14px}
+  .stack-card ul{list-style:none;padding:0;margin:0 0 14px}
+  .stack-card li{font-size:13.5px;color:#C9D1CB;font-weight:300;padding:6px 0;border-bottom:1px solid var(--line)}
+  .stack-card li:last-child{border-bottom:0}
+  .stack-card p{font-size:13px;color:var(--muted);font-weight:300;line-height:1.6}
+  @media(max-width:600px){.lic-row{flex-direction:column;gap:6px}.lic-row b{min-width:0}}
+    /* ---------- premium, services, spacing, footer note ---------- */
+  #start,#feed,#vault,#bank,#tools,#premium,#services{padding-top:56px;padding-bottom:56px}
+  #premium .sec-head,#services .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+  #premTabs{justify-content:center;margin-bottom:18px}
+  .prem-cta{text-align:center;margin-top:-20px}
+  .svc-note{max-width:620px;margin:0 auto 24px;text-align:center;font-size:13px;color:var(--muted);font-weight:300}
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .svc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column}
+  .svc-card h3{font-size:20px;margin-bottom:8px}
+  .svc-card p{font-size:13.5px;color:var(--muted);font-weight:300;line-height:1.65;margin-bottom:14px}
+  .svc-price{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+  .svc-price span{font-size:14px;color:var(--ivory);border:1px solid rgba(198,161,91,.35);border-radius:999px;padding:6px 14px}
+  .disclaimer{font-size:11.5px;color:#6E7772;text-align:center;padding:0 0 28px;line-height:1.6}
+  @media(min-width:861px) and (max-width:1180px){.navlinks{gap:16px;font-size:13.5px}}
+  @media(min-width:861px) and (max-width:1020px){.nav-actions .nav-cta{display:none}}
   /* ---------- reveal ---------- */
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
@@ -361,7 +519,12 @@
     <nav class="navlinks" id="navlinks" aria-label="Primary Navigation">
       <a href="#home" class="nav-link active">Home</a>
       <a href="#about" class="nav-link">About</a>
-      <a href="#contact" class="nav-link">Contact</a>
+            <a href="#start" class="nav-link">Start here</a>
+      <a href="#feed" class="nav-link">Prompts</a>
+      <a href="#vault" class="nav-link">Freebies</a>
+            <a href="#bank" class="nav-link">Idea bank</a>
+                  <a href="#tools" class="nav-link">Tools</a>
+      <      <a href="#premium" class="nav-link">Premium</a>
     </nav>
     <div class="nav-actions">
       <a href="#join" class="btn btn-primary nav-cta">Join WhatsApp</a>
@@ -385,7 +548,8 @@
       <a href="#join" class="btn btn-ghost">Join WhatsApp Class</a>
     </div>
     <div class="trust">
-      <span>ChatGPT</span><span>CapCut</span><span>Runway</span><span>ElevenLabs</span><span>Canva</span>
+      <span>ChatGPT</span><span>CapCut</span><span>Runway</span><span>ElevenLabs</span><span>Canva</span><span>Reforge</span>
+    </div>
     </div>
   </section>
 
@@ -415,6 +579,17 @@
     </div>
   </section>
 
+  <!-- ================= START HERE ================= -->
+  <section id="start" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">New here? Start here</span>
+      <h2>Your free starter kit</h2>
+      <p id="startIntro">Three free tools and one simple first week. No experience needed.</p>
+    </div>
+    <div class="start-grid" id="startTools"></div>
+    <div class="start-extra" id="startExtra"></div>
+    <p class="start-note" id="startNote"></p>
+  </section>
   <!-- ================= NICHES ================= -->
   <section id="niches" class="wrap">
     <div class="sec-head reveal">
@@ -436,10 +611,127 @@
     <div class="prompt-grid" id="promptGrid"></div>
   </section>
 
+  <!-- ================= FEED ================= -->
+  <section id="feed" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">03 — The feed</span>
+      <h2>Fresh from the channel</h2>
+      <p>Our best prompts and playbooks, ranked by quality. Free ones are open. Premium ones unlock with the class.</p>
+    </div>
+    <div class="feed-shell">
+      <div class="feed-bar">
+        <div class="filters" id="feedTabs">
+          <button class="chip active" data-tab="free">Free</button>
+          <button class="chip" data-tab="premium">Premium ✦</button>
+        </div>
+        <input class="feed-search" id="feedSearch" type="search" placeholder="Search prompts…" aria-label="Search the feed">
+      </div>
+      <div class="filters" id="feedKinds">
+        <button class="chip active" data-kind="All">All</button>
+        <button class="chip" data-kind="image-prompt">Image prompts</button>
+        <button class="chip" data-kind="video-prompt">Video prompts</button>
+        <button class="chip" data-kind="business-prompt">Business prompts</button>
+        <button class="chip" data-kind="playbook">Playbooks</button>
+      </div>
+      <div class="feed-meta" id="feedCount"></div>
+      <div class="feed" id="feedList"></div>
+      <div class="feed-more"><button class="btn btn-ghost" id="feedMore" style="display:none">Load more</button></div>
+    </div>
+  </section>
+
+  <!-- ================= VAULT ================= -->
+  <section id="vault" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">04 — Freebies Vault</span>
+      <h2>Free tools, courses and offers</h2>
+      <p>Hand-picked resources from the channel. All free to open.</p>
+    </div>
+    <p class="vault-note">Offers and credits change fast. Check the date on each card before you rely on one.</p>
+    <div class="filters" id="vaultKinds">
+      <button class="chip active" data-kind="All">All</button>
+      <button class="chip" data-kind="freebie">Freebies</button>
+      <button class="chip" data-kind="tools">Tool lists</button>
+      <button class="chip" data-kind="news">News</button>
+    </div>
+    <div class="vault-grid" id="vaultGrid"></div>
+  </section>
+
+    <!-- ================= IDEA BANK ================= -->
+  <section id="bank" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Idea bank</span>
+      <h2>Formats people actually watch</h2>
+      <p id="bankIntro">Pick one format, add your own idea, and make it yours.</p>
+    </div>
+    <div class="bank-tips" id="bankTips"></div>
+    <div class="filters" id="bankLevels">
+      <button class="chip active" data-level="All">All</button>
+      <button class="chip" data-level="Beginner">Beginner</button>
+      <button class="chip" data-level="Intermediate">Intermediate</button>
+      <button class="chip" data-level="Premium">Premium ✦</button>
+    </div>
+    <div class="bank-grid" id="bankGrid"></div>
+    <div class="sec-head reveal">
+      <span class="eyebrow">Hook formulas</span>
+      <h2>Win the first two seconds</h2>
+      <p>Copy one, fill in the brackets, and test it on your next video.</p>
+    </div>
+    <div class="hook-list" id="hookList"></div>
+  </section>
+    <!-- ================= TOOLS ================= -->
+  <section id="tools" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Tools to level up</span>
+      <h2>Beyond the starter kit</h2>
+      <p id="toolsIntro">The tools creators reach for next.</p>
+    </div>
+    <div class="filters" id="toolCats"></div>
+    <div class="dir-grid" id="toolGrid"></div>
+    <div class="sec-head reveal">
+      <span class="eyebrow">Licence check</span>
+      <h2 id="licTitle">Free doesn't always mean you can earn</h2>
+    </div>
+    <p class="lic-intro" id="licIntro"></p>
+    <div class="lic-box" id="licBox"></div>
+    <p class="retired-note" id="retiredNote"></p>
+    <div class="sec-head reveal">
+      <span class="eyebrow">Tool stacks</span>
+      <h2>Three ways to build your setup</h2>
+    </div>
+    <div class="stack-grid" id="stackGrid"></div>
+    <div class="sec-head reveal">
+      <span class="eyebrow">Premium workflows</span>
+      <h2>Step-by-step systems</h2>
+    </div>
+    <div class="bank-grid" id="flowGrid"></div>
+    <p class="start-note" id="toolsNote"></p>
+  </section>
+    <!-- ================= PREMIUM ================= -->
+  <section id="premium" class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Premium</span>
+      <h2>The members' vault</h2>
+      <p id="premIntro">Premium material comes with the live class.</p>
+    </div>
+    <div class="filters" id="premTabs"></div>
+    <div class="bank-grid" id="premGrid"></div>
+    <div class="prem-cta"><a href="#join" class="btn btn-primary">Join the class</a></div>
+  </section>
+
+  <!-- ================= SERVICES (hidden until you turn it on in services.json) ================= -->
+  <section id="services" class="wrap" hidden>
+    <div class="sec-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2 id="svcTitle">Work with us</h2>
+      <p id="svcIntro"></p>
+    </div>
+    <p class="svc-note" id="svcNote"></p>
+    <div class="svc-grid" id="svcGrid"></div>
+  </section>
   <!-- ================= IDEAS ================= -->
   <section id="ideas" class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">03 — Content ideas</span>
+      <span class="eyebrow">05 — Content ideas</span>
       <h2>What to post first</h2>
       <p>Simple angles that work on TikTok, Reels and Shorts.</p>
     </div>
@@ -456,7 +748,7 @@
   <!-- ================= STEPS ================= -->
   <section class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">04 — How it works</span>
+      <span class="eyebrow">06 — How it works</span>
       <h2>Three steps, no fluff</h2>
     </div>
     <div class="steps reveal">
@@ -493,7 +785,7 @@
           </div>
           <span class="contact-arrow">→</span>
         </a>
-        <a href="mailto:contact@dedigitals.com" class="contact-card">
+        <a href="mailto:desunday01@gmail.com" class="contact-card">
           <span class="contact-icon">✉️</span>
           <div class="contact-info">
             <h4>Direct Email</h4>
@@ -516,8 +808,11 @@
       <a href="https://chat.whatsapp.com/Eb54laWXX9h1IBWsvos9xf?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener">WhatsApp</a>
     </span>
   </div>
+    <div class="wrap"><p class="disclaimer">Tool and brand names belong to their owners, and we are not affiliated with them. Prices and free limits change, so confirm on each tool's own site.</p></div>
 </footer>
-
+<div class="gmodal" id="guideModal" aria-hidden="true">
+  <div class="gpanel" id="guidePanel" role="dialog" aria-modal="true"></div>
+</div>
 <div class="toast" id="toast">Copied to clipboard</div>
 
 <script>
@@ -525,15 +820,20 @@
    1) EDIT NICHES HERE
    ========================================================= */
 const NICHES = [
+  { icon:"🎞️", name:"Documentary",              advice:"Real stories, told with research and AI visuals." },
+  { icon:"📖", name:"Storytelling",             advice:"Cliffhanger shorts, moral tales and mini-series." },
+  { icon:"💍", name:"Marriage & Relationships", advice:"Warm, practical advice people save and share." },
+  { icon:"🧸", name:"Children's Content",       advice:"Gentle songs, bedtime stories and cute baby clips, made safely." },
+  { icon:"🌍", name:"Folktales",                advice:"Retell classic tales with fresh AI visuals." },
+  { icon:"👨‍👩‍👧", name:"Parenting & Family",       advice:"Everyday tips and relatable family moments." },
+  { icon:"🙏", name:"Faith-based",              advice:"Daily encouragement, scripture visuals, calm narration." },
   { icon:"🛍️", name:"Small Business", advice:"Show how AI cuts cost on ads, product videos and captions." },
-  { icon:"👗", name:"Fashion",       advice:"Lookbooks, styling tips, before/after outfit reels." },
-  { icon:"🍲", name:"Food",          advice:"Recipe reels, plating shots, restaurant promos." },
-  { icon:"🏠", name:"Real Estate",   advice:"Property tours, neighborhood explainers, agent branding." },
-  { icon:"💪", name:"Fitness",       advice:"Form tips, 30-day plans, myth-busting shorts." },
-  { icon:"📚", name:"Education",     advice:"Explain one concept in 30 seconds, every day." },
-  { icon:"🙏", name:"Faith",         advice:"Daily encouragement, scripture visuals, calm narration." },
-  { icon:"💰", name:"Affiliate",     advice:"Product demos, comparisons, honest reviews." },
-  { icon:"🔧", name:"Coming soon",   advice:"Your next niche goes here — edit the NICHES list." }
+  { icon:"👗", name:"Fashion",        advice:"Lookbooks, styling tips, before/after outfit reels." },
+  { icon:"🍲", name:"Food",           advice:"Recipe reels, plating shots, restaurant promos." },
+  { icon:"🏠", name:"Real Estate",    advice:"Property tours, neighborhood explainers, agent branding." },
+  { icon:"💪", name:"Fitness",        advice:"Form tips, 30-day plans, myth-busting shorts." },
+  { icon:"📚", name:"Education",      advice:"Explain one concept in 30 seconds, every day." },
+  { icon:"💰", name:"Affiliate",      advice:"Product demos, comparisons, honest reviews." }
 ];
 
 /* =========================================================
@@ -680,14 +980,24 @@ Tone: confident, friendly, no shaming.`
 const $ = s => document.querySelector(s);
 
 // niches
-$("#nicheGrid").innerHTML = NICHES.map(n => `
+// niches (drawn now, then drawn again once guides.json has loaded)
+let GUIDES = null;
+function renderNiches(afterLoad){
+  const attr = s => String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;");
+  $("#nicheGrid").innerHTML = NICHES.map(n => {
+    const has = GUIDES && GUIDES.niches && GUIDES.niches[n.name];
+    return `
   <div class="niche reveal">
     <span class="icon">${n.icon}</span>
     <h3>${n.name}</h3>
     <p>${n.advice}</p>
-    <a href="#prompts" class="more">See prompts →</a>
-  </div>
-`).join("");
+    ${has ? `<a class="more" data-guide="${attr(n.name)}" href="#niches">Read the guide →</a>`
+          : `<a href="#prompts" class="more">See prompts →</a>`}
+  </div>`;
+  }).join("");
+  if(afterLoad) observeReveals();
+}
+renderNiches(false);
 
 // filters
 const niches = ["All", ...new Set(PROMPTS.map(p => p.niche))];
@@ -747,7 +1057,7 @@ document.addEventListener("click", e => {
 $("#filters").addEventListener("click", e => {
   const chip = e.target.closest(".chip");
   if(!chip) return;
-  document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+  document.querySelector("#filters").querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
   chip.classList.add("active");
   renderPrompts(chip.dataset.filter);
 });
@@ -803,7 +1113,7 @@ window.addEventListener("scroll", () => {
 
 // active nav link scrollspy
 const navItemLinks = Array.from(document.querySelectorAll("#navlinks .nav-link"));
-const navSectionIds = ["home", "about", "contact"];
+ const navSectionIds = ["home", "about", "start", "feed", "vault", "bank", "tools", "premium", "contact"];
 const navSections = navSectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
 if ("IntersectionObserver" in window && navSections.length) {
@@ -837,7 +1147,451 @@ function observeReveals(){
   document.querySelectorAll(".reveal:not(.in)").forEach(el => io.observe(el));
 }
 
+/* =========================================================
+   FEED + VAULT — reads data.json
+   ========================================================= */
+const KIND_LABEL = {"image-prompt":"Image prompt","video-prompt":"Video prompt","business-prompt":"Business prompt",
+  playbook:"Playbook",freebie:"Freebie",tools:"Tool list",news:"News"};
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const PAGE_SIZE = 12;
+let ALL = [], FEED = [], VAULT = [];
+const feedState = { tab:"free", kind:"All", q:"", shown:PAGE_SIZE };
+const vaultState = { kind:"All" };
+
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate = d => { const p = (d||"").split("-"); return p.length>1 && MONTHS[+p[1]-1] ? MONTHS[+p[1]-1]+" "+p[0] : ""; };
+function rich(text){                       // escape first, then linkify + highlight [brackets]
+  return esc(text)
+    .replace(/https?:\/\/[^\s<]+/g, u => {
+      const m = u.match(/[.,;:!?)\]]+$/); const tail = m ? m[0] : "";
+      const url = tail ? u.slice(0, -tail.length) : u;
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>${tail}`;
+    })
+    .replace(/\[([^\]\n<>]{2,40})\]/g, "<b>[$1]</b>");
+}
+function hostOf(u){ try{ return new URL(u).hostname.replace(/^www\./,""); }catch(e){ return "link"; } }
+function safeLinks(item){ return (item.links||[]).filter(u => /^https?:\/\//i.test(u)); }
+function copyText(text, btn){
+  navigator.clipboard.writeText(text).then(() => {
+    const label = btn.dataset.label || btn.textContent;
+    btn.dataset.label = label; btn.textContent = "Copied ✓"; btn.classList.add("done");
+    const t = $("#toast"); t.classList.add("show");
+    setTimeout(() => t.classList.remove("show"), 1600);
+    setTimeout(() => { btn.textContent = label; btn.classList.remove("done"); }, 1800);
+  }).catch(() => {});
+}
+
+function feedCard(i){
+  const tags = `<div class="tags"><span class="tag tool">${esc(KIND_LABEL[i.kind]||i.kind)}</span>`
+    + (i.tool && i.tool!=="Any" ? `<span class="tag">${esc(i.tool)}</span>` : "")
+    + (i.niche && i.niche!=="Any" ? `<span class="tag">${esc(i.niche)}</span>` : "") + `</div>`;
+  if(i.premium){
+    return `<article class="prompt feed-card locked reveal">
+      <span class="badge-premium">Premium</span>${tags}
+      <h3>${esc(i.title)}</h3>
+      <pre>${esc(i.teaser||"")}</pre>
+      <div class="lock-bar"><span>Members only</span>
+        <a href="#join" class="btn btn-primary" style="padding:9px 18px;font-size:13px">Unlock</a></div>
+    </article>`;
+  }
+  const long = (i.text||"").length > 500;
+  return `<article class="prompt feed-card reveal">${tags}
+      <h3>${esc(i.title)}</h3>
+      <pre id="fb-${i.id}">${rich(i.text||"")}</pre>
+      <div class="prompt-foot">
+        <button class="fcopy" data-id="${i.id}" data-label="Copy">Copy</button>
+        ${long ? `<button class="fexpand" data-expand="fb-${i.id}">Show full</button>` : ""}
+      </div>
+    </article>`;
+}
+function feedList(){
+  const q = feedState.q.trim().toLowerCase();
+  return FEED.filter(i => (feedState.tab==="premium") === !!i.premium)
+    .filter(i => feedState.kind==="All" || i.kind===feedState.kind)
+    .filter(i => !q || [i.title,i.desc,i.text,i.teaser,i.tool,i.niche].join(" ").toLowerCase().includes(q));
+}
+function renderFeed(){
+  const list = feedList(), page = list.slice(0, feedState.shown);
+  $("#feedList").innerHTML = page.length ? page.map(feedCard).join("")
+    : `<p class="feed-empty">Nothing here yet. Try another filter or search.</p>`;
+  $("#feedMore").style.display = list.length > page.length ? "" : "none";
+  $("#feedCount").textContent = list.length + (list.length===1 ? " post" : " posts");
+  observeReveals();
+}
+function vaultCard(i){
+  const links = safeLinks(i).slice(0,2);
+  return `<article class="vault-card reveal">
+    <div class="tags"><span class="tag tool">${esc(KIND_LABEL[i.kind]||i.kind)}</span>
+      ${fmtDate(i.date) ? `<span class="tag">${fmtDate(i.date)}</span>` : ""}</div>
+    <h3>${esc(i.title)}</h3>
+    <p>${esc(i.desc||"")}</p>
+    <div class="vault-actions">
+      ${links.map(u => `<a class="vlink" href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(hostOf(u))} ↗</a>`).join("")}
+      <button class="fcopy" data-id="${i.id}" data-label="Copy details">Copy details</button>
+    </div>
+  </article>`;
+}
+function renderVault(){
+  const list = VAULT.filter(i => vaultState.kind==="All" || i.kind===vaultState.kind)
+    .sort((a,b) => (b.date||"").localeCompare(a.date||""));
+  $("#vaultGrid").innerHTML = list.length ? list.map(vaultCard).join("")
+    : `<p class="feed-empty">No items in this category yet.</p>`;
+  observeReveals();
+}
+function setActive(box, chip){ box.querySelectorAll(".chip").forEach(c => c.classList.remove("active")); chip.classList.add("active"); }
+
+function initFeed(data){
+  ALL = data;
+  FEED = data.filter(i => !i.vault);
+  VAULT = data.filter(i => i.vault);
+  const nFree = FEED.filter(i => !i.premium).length, nPrem = FEED.filter(i => i.premium).length;
+  $('#feedTabs [data-tab="free"]').textContent = `Free (${nFree})`;
+  $('#feedTabs [data-tab="premium"]').textContent = `Premium ✦ (${nPrem})`;
+  renderFeed(); renderVault();
+}
+function loadFeed(){
+  fetch("data.json", { cache:"no-cache" })
+    .then(r => { if(!r.ok) throw new Error("no data"); return r.json(); })
+    .then(initFeed)
+    .catch(() => {
+      $("#feedList").innerHTML = `<p class="feed-empty">The feed is being updated. Check back shortly.</p>`;
+      $("#vaultGrid").innerHTML = `<p class="feed-empty">The vault is being updated. Check back shortly.</p>`;
+    });
+}
+
+$("#feedTabs").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if(!c) return;
+  setActive($("#feedTabs"), c); feedState.tab = c.dataset.tab; feedState.shown = PAGE_SIZE; renderFeed();
+});
+$("#feedKinds").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if(!c) return;
+  setActive($("#feedKinds"), c); feedState.kind = c.dataset.kind; feedState.shown = PAGE_SIZE; renderFeed();
+});
+$("#vaultKinds").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if(!c) return;
+  setActive($("#vaultKinds"), c); vaultState.kind = c.dataset.kind; renderVault();
+});
+let searchTimer;
+$("#feedSearch").addEventListener("input", e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { feedState.q = e.target.value; feedState.shown = PAGE_SIZE; renderFeed(); }, 200);
+});
+$("#feedMore").addEventListener("click", () => { feedState.shown += PAGE_SIZE; renderFeed(); });
+document.addEventListener("click", e => {
+  const copy = e.target.closest(".fcopy");
+  if(copy){
+    const item = ALL.find(i => i.id === copy.dataset.id); if(!item) return;
+    const text = item.vault ? [item.title, "", item.text||item.desc, "", ...safeLinks(item)].join("\n") : item.text;
+    copyText(text, copy); return;
+  }
+  const ex = e.target.closest(".fexpand");
+  if(ex){
+    const pre = document.getElementById(ex.dataset.expand); if(!pre) return;
+    pre.classList.toggle("open"); ex.textContent = pre.classList.contains("open") ? "Show less" : "Show full";
+  }
+});
+/* =========================================================
+   START HERE + NICHE GUIDES — reads guides.json
+   ========================================================= */
+function renderStart(){
+  const s = GUIDES && GUIDES.startHere; if(!s) return;
+  if(s.intro) $("#startIntro").textContent = s.intro;
+  $("#startTools").innerHTML = (s.tools||[]).map((t,i) => `
+    <article class="tool-card reveal">
+      <span class="emoji">${t.emoji||""}</span>
+      <h3>${esc(t.name)}</h3>
+      <p>${esc(t.for)}</p>
+      <div class="lbl">What's free</div><p>${esc(t.free)}</p>
+      <div class="lbl">If you upgrade later</div><p>${esc(t.paid)}</p>
+      <div class="lbl">Your first try</div>
+      ${t.tryIsPrompt
+        ? `<pre id="st-${i}">${rich(t.try)}</pre><div><button class="gcopy" data-target="st-${i}" data-label="Copy prompt">Copy prompt</button></div>`
+        : `<p>${esc(t.try)}</p>`}
+      <p class="tip">${esc(t.tip||"")}</p>
+    </article>`).join("");
+  const list = a => `<ul>${(a||[]).map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  $("#startExtra").innerHTML =
+    `<div class="extra-card reveal"><h3>${esc(s.weekTitle||"Your first week")}</h3>${list(s.week)}</div>` +
+    `<div class="extra-card reveal"><h3>${esc(s.rulesTitle||"Two rules from day one")}</h3>${list(s.rules)}</div>`;
+  $("#startNote").textContent = "Free limits and prices change often. Last checked " + (GUIDES.updated||"recently") + ". Always trust the number shown inside the app.";
+  observeReveals();
+}
+
+function openGuide(name){
+  const g = GUIDES && GUIDES.niches && GUIDES.niches[name]; if(!g) return;
+  const list = a => `<ul>${(a||[]).map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  const prompts = (g.prompts||[]).map((p,i) => `
+    <div class="g-prompt"><div class="g-ptitle">${esc(p.title)}</div>
+      <pre id="gp-${i}">${rich(p.text)}</pre>
+      <button class="gcopy" data-target="gp-${i}" data-label="Copy prompt">Copy prompt</button></div>`).join("");
+  $("#guidePanel").innerHTML = `
+    <button class="gclose" data-close aria-label="Close">×</button>
+    <h2>${esc(name)}</h2>
+    <div class="g-tag">${esc(g.tagline||"")}</div>
+    <p>${esc(g.what||"")}</p>
+    <h4>Formats that work</h4>${list(g.formats)}
+    <h4>Simple workflow</h4><p>${esc(g.workflow||"")}</p>
+    <h4>Starter prompts</h4>${prompts}
+    <h4>Rules that protect you</h4>${list(g.rules)}
+    <h4>Starter ideas</h4>${list(g.ideas)}
+    <div class="g-locked"><span class="badge-premium" style="position:static;display:inline-block">Premium</span>
+      <h4>Inside the premium blueprint</h4>${list(g.locked)}
+      <a href="#join" class="btn btn-primary" data-close>Unlock with the class</a></div>`;
+  $("#guideModal").classList.add("open"); $("#guideModal").setAttribute("aria-hidden","false");
+  document.body.classList.add("noscroll"); $("#guideModal").scrollTop = 0;
+}
+function closeGuide(){
+  $("#guideModal").classList.remove("open"); $("#guideModal").setAttribute("aria-hidden","true");
+  document.body.classList.remove("noscroll");
+}
+function loadGuides(){
+  fetch("guides.json", { cache:"no-cache" })
+    .then(r => { if(!r.ok) throw new Error("no guides"); return r.json(); })
+    .then(data => { GUIDES = data; renderStart(); renderNiches(true); })
+    .catch(() => { $("#startTools").innerHTML = `<p class="feed-empty">The starter kit is being updated. Check back shortly.</p>`; });
+}
+$("#nicheGrid").addEventListener("click", e => {
+  const a = e.target.closest("[data-guide]"); if(!a) return;
+  e.preventDefault(); openGuide(a.dataset.guide);
+});
+$("#guideModal").addEventListener("click", e => {
+  if(e.target.id === "guideModal" || e.target.closest("[data-close]")) closeGuide();
+});
+document.addEventListener("keydown", e => { if(e.key === "Escape") closeGuide(); });
+document.addEventListener("click", e => {
+  const b = e.target.closest(".gcopy"); if(!b) return;
+  const pre = document.getElementById(b.dataset.target); if(pre) copyText(pre.textContent, b);
+});
+/* =========================================================
+   IDEA BANK — reads ideas.json
+   ========================================================= */
+let IDEAS = null;
+const bankState = { level:"All" };
+
+function renderBank(){
+  if(!IDEAS) return;
+  if(IDEAS.intro) $("#bankIntro").textContent = IDEAS.intro;
+  $("#bankTips").innerHTML = (IDEAS.platformTips||[]).map(t =>
+    `<div class="tip-pill"><b>${esc(t.platform)}</b><span>${esc(t.tip)}</span></div>`).join("");
+  const list = (IDEAS.formats||[]).filter(f =>
+    bankState.level==="All" ||
+    (bankState.level==="Premium" ? f.premium : (!f.premium && f.level===bankState.level)));
+  $("#bankGrid").innerHTML = list.length ? list.map(f => `
+    <article class="format-card reveal" data-format="${esc(f.id)}" tabindex="0">
+      ${f.premium ? `<span class="badge-premium">Premium</span>` : ""}
+      <span class="emoji">${f.emoji||""}</span>
+      <h3>${esc(f.name)}</h3>
+      <div class="tags"><span class="tag tool">${esc(f.length||"")}</span>
+        ${(f.platforms||[]).map(p => `<span class="tag">${esc(p)}</span>`).join("")}
+        ${f.level ? `<span class="tag">${esc(f.level)}</span>` : ""}</div>
+      <p>${esc(f.why)}</p>
+      <span class="more">${f.premium ? "See what's inside →" : "Open the recipe →"}</span>
+    </article>`).join("") : `<p class="feed-empty">Nothing here yet.</p>`;
+  $("#hookList").innerHTML = (IDEAS.hooks||[]).map((h,i) => `
+    <div class="hook-item"><div class="hook-name">${esc(h.name)}</div>
+      <pre id="hk-${i}">${rich(h.text)}</pre>
+      <button class="gcopy" data-target="hk-${i}" data-label="Copy">Copy</button></div>`).join("");
+  observeReveals();
+}
+
+function openFormat(id){
+  const f = IDEAS && (IDEAS.formats||[]).find(x => x.id === id); if(!f) return;
+  const ul = a => `<ul>${(a||[]).map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  const ol = a => `<ol>${(a||[]).map(x => `<li>${esc(x)}</li>`).join("")}</ol>`;
+  const head = `<button class="gclose" data-close aria-label="Close">×</button>
+    <h2>${f.emoji||""} ${esc(f.name)}</h2>
+    <div class="g-tag">${esc(f.length||"")} · ${esc((f.platforms||[]).join(", "))}</div>`;
+  const body = f.premium
+    ? `<p>${esc(f.why)}</p>
+       <div class="g-locked"><span class="badge-premium" style="position:static;display:inline-block">Premium</span>
+         <h4>Inside this premium recipe</h4><p>${esc(f.teaser||"")}</p>
+         <a href="#join" class="btn btn-primary" data-close>Unlock with the class</a></div>`
+    : `<p>${esc(f.why)}</p>
+       <h4>How to make it</h4>${ol(f.steps)}
+       <h4>Starter prompt</h4>
+       <div class="g-prompt"><pre id="fp-0">${rich(f.prompt||"")}</pre>
+         <button class="gcopy" data-target="fp-0" data-label="Copy prompt">Copy prompt</button></div>
+       <h4>Hook ideas</h4>${ul(f.hooks)}
+       <h4>Works well for</h4><p>${esc((f.niches||[]).join(", "))}</p>
+       <div class="g-warn"><b>Watch out:</b> ${esc(f.watchOut||"")}</div>`;
+  $("#guidePanel").innerHTML = head + body;
+  $("#guideModal").classList.add("open"); $("#guideModal").setAttribute("aria-hidden","false");
+  document.body.classList.add("noscroll"); $("#guideModal").scrollTop = 0;
+}
+function loadIdeas(){
+  fetch("ideas.json", { cache:"no-cache" })
+    .then(r => { if(!r.ok) throw new Error("no ideas"); return r.json(); })
+    .then(data => { IDEAS = data; renderBank(); })
+    .catch(() => { $("#bankGrid").innerHTML = `<p class="feed-empty">The idea bank is being updated. Check back shortly.</p>`; });
+}
+$("#bankLevels").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if(!c) return;
+  setActive($("#bankLevels"), c); bankState.level = c.dataset.level; renderBank();
+});
+$("#bankGrid").addEventListener("click", e => {
+  const c = e.target.closest("[data-format]"); if(c) openFormat(c.dataset.format);
+});
+$("#bankGrid").addEventListener("keydown", e => {
+  if(e.key !== "Enter") return;
+  const c = e.target.closest("[data-format]"); if(c) openFormat(c.dataset.format);
+});
+/* =========================================================
+   TOOLS DIRECTORY — reads tools.json
+   ========================================================= */
+let TOOLS = null;
+const toolState = { cat:"All" };
+
+function renderTools(){
+  if(!TOOLS) return;
+  if(TOOLS.intro) $("#toolsIntro").textContent = TOOLS.intro;
+  const cats = ["All", ...(TOOLS.categories||[])];
+  $("#toolCats").innerHTML = cats.map(c =>
+    `<button class="chip${c===toolState.cat ? " active" : ""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");
+  const earnLabel = { Yes:"Free output: yes, check terms", No:"Free output: not for earning", Check:"Free output: check terms" };
+  const list = (TOOLS.tools||[]).filter(t => toolState.cat==="All" || t.category===toolState.cat);
+  $("#toolGrid").innerHTML = list.map(t => `
+    <article class="tool-card reveal">
+      <span class="emoji">${t.emoji||""}</span>
+      <h3>${esc(t.name)}</h3>
+      <div class="tags"><span class="tag tool">${esc(t.category)}</span><span class="tag">${esc(t.level||"")}</span>
+        ${t.earn ? `<span class="tag earn-${esc(t.earn.toLowerCase())}">${esc(earnLabel[t.earn]||t.earn)}</span>` : ""}</div>
+      <p>${esc(t.best)}</p>
+      <div class="lbl">Free</div><p>${esc(t.free)}</p>
+      <div class="lbl">Paid</div><p>${esc(t.paid)}</p>
+      ${t.earnNote ? `<div class="lbl">Can you earn from it?</div><p>${esc(t.earnNote)}</p>` : ""}
+      <p class="tip"><b>Tip:</b> ${esc(t.tip||"")}</p>
+      <p class="tip"><b>Watch out:</b> ${esc(t.watchOut||"")}</p>
+      ${/^https?:\/\//i.test(t.url||"") ? `<div class="vault-actions" style="margin-top:14px"><a class="vlink" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">Official site ↗</a></div>` : ""}
+    </article>`).join("") || `<p class="feed-empty">Nothing here yet.</p>`;
+
+  if(TOOLS.licenseTitle) $("#licTitle").textContent = TOOLS.licenseTitle;
+  $("#licIntro").textContent = TOOLS.licenseIntro || "";
+  $("#licBox").innerHTML = (TOOLS.licenseCheck||[]).map(r => `
+    <div class="lic-row"><b>${esc(r.tool)}</b>
+      <span class="tag earn-${esc((r.status||"").toLowerCase())}">${r.status==="Yes" ? "Allowed" : "Not on free"}</span>
+      <span>${esc(r.note)}</span></div>`).join("");
+  $("#retiredNote").textContent = TOOLS.retired || "";
+  $("#stackGrid").innerHTML = (TOOLS.stacks||[]).map(s => `
+    <article class="stack-card reveal"><h3>${esc(s.name)}</h3><div class="price">${esc(s.price)}</div>
+      <ul>${(s.tools||[]).map(x => `<li>${esc(x)}</li>`).join("")}</ul><p>${esc(s.note)}</p></article>`).join("");
+  $("#flowGrid").innerHTML = (TOOLS.workflows||[]).map(w => `
+    <article class="format-card reveal" data-workflow="${esc(w.id)}" tabindex="0">
+      <span class="badge-premium">Premium</span>
+      <span class="emoji">${w.emoji||""}</span>
+      <h3>${esc(w.name)}</h3>
+      <p>${esc(w.why)}</p>
+      <span class="more">See what's inside →</span></article>`).join("");
+  $("#toolsNote").textContent = "Prices and limits checked " + (TOOLS.updated||"recently") + ". Always confirm on the tool's own site before you pay.";
+  observeReveals();
+}
+function openWorkflow(id){
+  const w = TOOLS && (TOOLS.workflows||[]).find(x => x.id === id); if(!w) return;
+  $("#guidePanel").innerHTML = `<button class="gclose" data-close aria-label="Close">×</button>
+    <h2>${w.emoji||""} ${esc(w.name)}</h2>
+    <p>${esc(w.why)}</p>
+    <div class="g-locked"><span class="badge-premium" style="position:static;display:inline-block">Premium</span>
+      <h4>Inside this workflow</h4><p>${esc(w.teaser||"")}</p>
+      <a href="#join" class="btn btn-primary" data-close>Unlock with the class</a></div>`;
+  $("#guideModal").classList.add("open"); $("#guideModal").setAttribute("aria-hidden","false");
+  document.body.classList.add("noscroll"); $("#guideModal").scrollTop = 0;
+}
+function loadTools(){
+  fetch("tools.json", { cache:"no-cache" })
+    .then(r => { if(!r.ok) throw new Error("no tools"); return r.json(); })
+    .then(data => { TOOLS = data; renderTools(); })
+    .catch(() => { $("#toolGrid").innerHTML = `<p class="feed-empty">The tools list is being updated. Check back shortly.</p>`; });
+}
+$("#toolCats").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if(!c) return;
+  toolState.cat = c.dataset.cat; renderTools();
+});
+$("#flowGrid").addEventListener("click", e => {
+  const c = e.target.closest("[data-workflow]"); if(c) openWorkflow(c.dataset.workflow);
+});
+$("#flowGrid").addEventListener("keydown", e => {
+  if(e.key !== "Enter") return;
+  const c = e.target.closest("[data-workflow]"); if(c) openWorkflow(c.dataset.workflow);
+});
+/* =========================================================
+   PREMIUM + SERVICES — read premium.json and services.json
+   ========================================================= */
+let PREM = null;
+const premState = { tab:"packs" };
+
+function renderPremium(){
+  if(!PREM) return;
+  if(PREM.intro) $("#premIntro").textContent = PREM.intro;
+  const tabs = PREM.tabs || [];
+  if(!tabs.some(t => t.id === premState.tab) && tabs[0]) premState.tab = tabs[0].id;
+  $("#premTabs").innerHTML = tabs.map(t =>
+    `<button class="chip${t.id===premState.tab ? " active" : ""}" data-tab="${esc(t.id)}">${esc(t.name)}</button>`).join("");
+  const cur = tabs.find(t => t.id === premState.tab);
+  $("#premGrid").innerHTML = cur ? (cur.items||[]).map((it,i) => `
+    <article class="format-card reveal" data-prem="${esc(cur.id)}:${i}" tabindex="0">
+      <h3>${esc(it.name)}</h3>
+      <div class="tags"><span class="tag ${it.status==="Available" ? "earn-yes" : "tool"}">${esc(it.status||"Coming soon")}</span></div>
+      <p>${esc(it.desc)}</p>
+      <span class="more">See what's inside →</span>
+    </article>`).join("") : "";
+  observeReveals();
+}
+function openPremium(key){
+  const parts = String(key).split(":"); const tab = (PREM.tabs||[]).find(t => t.id === parts[0]);
+  const it = tab && (tab.items||[])[+parts[1]]; if(!it) return;
+  const ready = it.status === "Available";
+  $("#guidePanel").innerHTML = `<button class="gclose" data-close aria-label="Close">×</button>
+    <h2>${esc(it.name)}</h2>
+    <div class="g-tag">${esc(it.status||"Coming soon")}</div>
+    <p>${esc(it.desc)}</p>
+    <h4>What's inside</h4><ul>${(it.includes||[]).map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+    <div class="g-locked"><span class="badge-premium" style="position:static;display:inline-block">Premium</span>
+      <h4>${ready ? "Included with the class" : "Still being finished"}</h4>
+      <p>${ready ? "Join the class to get access." : "Join the class to be first to get it when it's ready."}</p>
+      <a href="#join" class="btn btn-primary" data-close>Join the class</a></div>`;
+  $("#guideModal").classList.add("open"); $("#guideModal").setAttribute("aria-hidden","false");
+  document.body.classList.add("noscroll"); $("#guideModal").scrollTop = 0;
+}
+function loadPremium(){
+  fetch("premium.json", { cache:"no-cache" })
+    .then(r => { if(!r.ok) throw new Error("no premium"); return r.json(); })
+    .then(data => { PREM = data; renderPremium(); })
+    .catch(() => { $("#premGrid").innerHTML = `<p class="feed-empty">The members' vault is being updated. Check back shortly.</p>`; });
+}
+function loadServices(){
+  fetch("services.json", { cache:"no-cache" })
+    .then(r => { if(!r.ok) throw new Error("no services"); return r.json(); })
+    .then(s => {
+      const items = (s.items||[]).filter(x => x && x.name && !/^example/i.test(x.name));
+      if(!s.enabled || !items.length) return;
+      $("#svcTitle").textContent = s.title || "Work with us";
+      $("#svcIntro").textContent = s.intro || "";
+      $("#svcNote").textContent = s.note || "";
+      $("#svcGrid").innerHTML = items.map(x => `
+        <article class="svc-card reveal"><h3>${esc(x.name)}</h3><p>${esc(x.desc||"")}</p>
+          <div class="svc-price">${x.priceNGN ? `<span>${esc(x.priceNGN)}</span>` : ""}${x.priceUSD ? `<span>${esc(x.priceUSD)}</span>` : ""}</div>
+          ${x.note ? `<p style="margin:12px 0 0;font-size:12.5px">${esc(x.note)}</p>` : ""}</article>`).join("");
+      $("#services").hidden = false; observeReveals();
+    })
+    .catch(() => {});
+}
+$("#premTabs").addEventListener("click", e => {
+  const c = e.target.closest(".chip"); if(!c) return;
+  premState.tab = c.dataset.tab; renderPremium();
+});
+$("#premGrid").addEventListener("click", e => {
+  const c = e.target.closest("[data-prem]"); if(c) openPremium(c.dataset.prem);
+});
+$("#premGrid").addEventListener("keydown", e => {
+  if(e.key !== "Enter") return;
+  const c = e.target.closest("[data-prem]"); if(c) openPremium(c.dataset.prem);
+});
 // init
+loadFeed();
+loadGuides();
+loadIdeas();
+loadTools();
+loadPremium();
+loadServices();
 renderPrompts();
 observeReveals();
 $("#year").textContent = new Date().getFullYear();
